@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="CircleCue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_small" translatesAutoresizingMaskIntoConstraints="NO" id="doJ-n1-PLX">
+                        <rect key="frame" x="15" y="25" width="50" height="50"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="doJ-n1-PLX" secondAttribute="height" id="9kB-pf-Sst"/>
+                            <constraint firstAttribute="height" constant="50" id="pkZ-mf-LfY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwA-i0-dvG">
+                        <rect key="frame" x="80" y="16.5" width="271" height="67.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gID-tG-oal">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="67.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CircleCue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPj-n1-xgY">
+                                        <rect key="frame" x="0.0" y="0.0" width="271" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJp-QV-PWI">
+                                        <rect key="frame" x="0.0" y="27.5" width="271" height="19"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                        <color key="textColor" name="Yellow_ECE590"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgi-Rr-Oxg">
+                                        <rect key="frame" x="0.0" y="48.5" width="271" height="19"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                        <color key="textColor" name="Yellow_ECE590"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVu-dT-HyB">
+                                <rect key="frame" x="271" y="0.0" width="30" height="67.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icVip" translatesAutoresizingMaskIntoConstraints="NO" id="i5D-Wd-mfJ">
+                                        <rect key="frame" x="0.0" y="18.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="o6k-ad-po7"/>
+                                            <constraint firstAttribute="height" constant="30" id="wwy-S5-bpa"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Uli-UJ-Ubh"/>
+                                    <constraint firstItem="i5D-Wd-mfJ" firstAttribute="centerX" secondItem="tVu-dT-HyB" secondAttribute="centerX" id="bhq-Dg-QJm"/>
+                                    <constraint firstItem="i5D-Wd-mfJ" firstAttribute="centerY" secondItem="tVu-dT-HyB" secondAttribute="centerY" id="erJ-6n-5JL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FH-zf-LtM">
+                        <rect key="frame" x="15" y="99.5" width="359" height="0.5"/>
+                        <color key="backgroundColor" name="LineColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.69999999999999996" id="snj-MV-vwC"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-on-ars">
+                        <rect key="frame" x="361" y="43.5" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Fae-on-ars" secondAttribute="height" multiplier="1:1" id="QQw-DW-Yca"/>
+                            <constraint firstAttribute="height" constant="13" id="U4t-oH-uGa"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Fae-on-ars" secondAttribute="trailing" constant="15" id="08R-JS-tnA"/>
+                    <constraint firstItem="0FH-zf-LtM" firstAttribute="leading" secondItem="doJ-n1-PLX" secondAttribute="leading" id="0WH-bK-jly"/>
+                    <constraint firstItem="mwA-i0-dvG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2wh-Zd-xtU"/>
+                    <constraint firstItem="Fae-on-ars" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CJY-b0-2Fx"/>
+                    <constraint firstItem="Fae-on-ars" firstAttribute="leading" secondItem="mwA-i0-dvG" secondAttribute="trailing" constant="10" id="Cs6-cd-OKf"/>
+                    <constraint firstAttribute="trailing" secondItem="0FH-zf-LtM" secondAttribute="trailing" constant="15" id="Ms8-Sd-ba1"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="doJ-n1-PLX" secondAttribute="bottom" constant="15" id="Qmm-2q-D7Q"/>
+                    <constraint firstItem="mwA-i0-dvG" firstAttribute="leading" secondItem="doJ-n1-PLX" secondAttribute="trailing" constant="15" id="TUJ-0B-uaQ"/>
+                    <constraint firstItem="doJ-n1-PLX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="iyF-FR-XBa"/>
+                    <constraint firstItem="doJ-n1-PLX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kUr-Zr-Rfy"/>
+                    <constraint firstAttribute="bottom" secondItem="0FH-zf-LtM" secondAttribute="bottom" id="tne-gK-hCZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="locationLabel" destination="Bgi-Rr-Oxg" id="EfM-Wq-cQF"/>
+                <outlet property="userImageView" destination="doJ-n1-PLX" id="ih1-mY-ayc"/>
+                <outlet property="userNameLabel" destination="iPj-n1-xgY" id="k7y-av-Mlo"/>
+                <outlet property="userTitleLabel" destination="NJp-QV-PWI" id="gGK-A8-6wf"/>
+                <outlet property="viewVip" destination="tVu-dT-HyB" id="95S-E6-XvS"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="84.375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar_small" width="60" height="60"/>
+        <image name="icVip" width="35" height="36.5"/>
+        <image name="ic_arrow_right" width="13" height="13"/>
+        <namedColor name="LineColor">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Yellow_ECE590">
+            <color red="0.92549019607843142" green="0.89803921568627454" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

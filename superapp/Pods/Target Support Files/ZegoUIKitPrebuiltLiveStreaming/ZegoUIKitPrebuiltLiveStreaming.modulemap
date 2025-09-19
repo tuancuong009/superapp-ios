@@ -1,0 +1,6 @@
+framework module ZegoUIKitPrebuiltLiveStreaming {
+  umbrella header "ZegoUIKitPrebuiltLiveStreaming-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveStreamListVC" customModule="CircleCue" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoData" destination="aRJ-UU-ZSv" id="fYW-eD-9a1"/>
+                <outlet property="tblData" destination="WgB-aE-qWi" id="1Ts-kM-CW4"/>
+                <outlet property="topBarMenuView" destination="Wsx-vC-dbf" id="2nR-cx-Bsm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="rX1-XQ-j77">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-vC-dbf" customClass="TopbarView" customModule="CircleCue" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ced-eI-t78"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="GO LIVE"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showRightMenu" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftButtonType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rightButtonType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WgB-aE-qWi">
+                    <rect key="frame" x="0.0" y="113" width="393" height="705"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gw0-4T-cyx"/>
+                        <outlet property="delegate" destination="-1" id="ifZ-2W-4rJ"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRJ-UU-ZSv">
+                    <rect key="frame" x="20" y="123" width="353" height="107"/>
+                    <string key="text">Click on the PLUS + and GO LIVE to showcase your Products and Services. Provide prices and Interact with your Clients to provide answers to their questions. Any nudity or spam will block your account and banned from CircleCue</string>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rX1-XQ-j77" secondAttribute="bottom" id="0M3-AN-z2k"/>
+                <constraint firstItem="rX1-XQ-j77" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EeF-N7-gzF"/>
+                <constraint firstAttribute="trailing" secondItem="rX1-XQ-j77" secondAttribute="trailing" id="K9u-H1-0yo"/>
+                <constraint firstItem="WgB-aE-qWi" firstAttribute="top" secondItem="Wsx-vC-dbf" secondAttribute="bottom" constant="10" id="Kv2-4K-NSE"/>
+                <constraint firstItem="aRJ-UU-ZSv" firstAttribute="top" secondItem="WgB-aE-qWi" secondAttribute="top" constant="10" id="Ng5-e7-d7s"/>
+                <constraint firstItem="Wsx-vC-dbf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nlf-Bo-aXH"/>
+                <constraint firstItem="WgB-aE-qWi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bW5-8U-cJc"/>
+                <constraint firstAttribute="trailing" secondItem="Wsx-vC-dbf" secondAttribute="trailing" id="hL4-Vx-a4D"/>
+                <constraint firstAttribute="trailing" secondItem="WgB-aE-qWi" secondAttribute="trailing" id="hUn-fn-qwy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WgB-aE-qWi" secondAttribute="bottom" id="icz-eH-jMK"/>
+                <constraint firstItem="Wsx-vC-dbf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l5Y-nf-5KX"/>
+                <constraint firstItem="aRJ-UU-ZSv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qH8-MU-cdi"/>
+                <constraint firstItem="rX1-XQ-j77" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qxe-IY-Zrz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aRJ-UU-ZSv" secondAttribute="trailing" constant="20" id="vRo-dg-nIv"/>
+            </constraints>
+            <point key="canvasLocation" x="-158.01526717557252" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="414" height="780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

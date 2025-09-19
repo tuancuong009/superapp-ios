@@ -1,0 +1,102 @@
+//
+//  LoginSuperAppViewController.swift
+//  SuperApp
+//
+//  Created by QTS Coder on 9/5/25.
+//
+
+import UIKit
+
+class LoginSuperAppViewController: BaseVC {
+
+    @IBOutlet weak var txfEmail: CustomTextField!
+    @IBOutlet weak var txfPassword: CustomTextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    @IBAction func doForgotPassword(_ sender: Any) {
+        let vc = ForgotSuperViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func doPassword(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected{
+            txfPassword.isSecureTextEntry = false
+        }
+        else{
+            txfPassword.isSecureTextEntry = true
+        }
+    }
+    @IBAction func doLogin(_ sender: Any) {
+        let email = txfEmail.text!.trimmed
+        let password = txfPassword.text!
+      
+        if email.isEmpty{
+            self.showAlert(title: APP_NAME, message: "Email is required")
+            return
+        }
+        if !email.isValidEmail(){
+            self.showAlert(title: APP_NAME, message: "Invalid email")
+            return
+        }
+        if password.isEmpty{
+            self.showAlert(title: APP_NAME, message: "Password is required")
+            return
+        }
+        
+        let param = [ "email": email, "password": password]
+        self.view.endEditing(true)
+        self.showBusy()
+        ManageAPI.shared.logInAccountSuperApp(param) { user, error in
+            self.hideBusy()
+            if let user = user{
+                if let Status = user.value(forKey: "Status") as? Bool , !Status{
+                    self.showAlert(title: APP_NAME, message: user.value(forKey: "Message") as? String)
+                }
+                else{
+                    if let data = user.object(forKey: "data") as? NSDictionary{
+                        if let id = data.value(forKey: "id") as? Int{
+                            UserDefaults.standard.set("\(id)", forKey: USER_ID_SUPER_APP)
+                            UserDefaults.standard.synchronize()
+                        }
+                        else if let id = data.value(forKey: "id") as? String{
+                            UserDefaults.standard.set("\(id)", forKey: USER_ID_SUPER_APP)
+                            UserDefaults.standard.synchronize()
+                        }
+                        APP_DELEGATE.initSuperApp()
+                    }
+                    else{
+                        self.showAlert(title: APP_NAME, message: user.value(forKey: "Message") as? String)
+                    }
+                   
+                }
+            }
+            else{
+                self.showAlert(title: APP_NAME, message: error?.msg)
+            }
+        }
+    }
+    
+    @IBAction func doBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+}
+extension LoginSuperAppViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}

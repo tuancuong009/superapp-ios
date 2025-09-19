@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-Medium.ttf">
+            <string>Baloo2-Medium</string>
+        </array>
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ProfileCollectionViewCell" reuseIdentifier="ProfileCollectionViewCell" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="Matcheron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="496"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="496"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="Cvy-Ql-Mhc">
+                        <rect key="frame" x="10" y="0.0" width="374" height="376"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zaC-Ph-zvT">
+                        <rect key="frame" x="20" y="386" width="354" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Gina - 25 - Designer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtW-nv-mME">
+                                <rect key="frame" x="0.0" y="0.0" width="354" height="38.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Baloo2-Medium" family="Baloo 2" pointSize="22"/>
+                                <color key="textColor" name="ColorLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Christian Protestant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-Nb-Ewv">
+                                <rect key="frame" x="0.0" y="38.666666666666686" width="354" height="30.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="19"/>
+                                <color key="textColor" name="ColorLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Torronto Canada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-Jx-uIv">
+                                <rect key="frame" x="0.0" y="69.333333333333314" width="354" height="30.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="19"/>
+                                <color key="textColor" name="ColorLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="ihB-ZU-axV"/>
+                        </constraints>
+                    </stackView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-Oe-hgV">
+                        <rect key="frame" x="152" y="324" width="90" height="42"/>
+                        <color key="backgroundColor" name="TextBlue"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="TCH-1s-GB2"/>
+                            <constraint firstAttribute="width" constant="90" id="oSe-3k-82V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Messaged">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="domessage:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Ib9-Ek-Ivn"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="VXb-Oe-hgV" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="5Jg-ku-mUj"/>
+                <constraint firstItem="zaC-Ph-zvT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="79z-nm-aee"/>
+                <constraint firstAttribute="trailing" secondItem="Cvy-Ql-Mhc" secondAttribute="trailing" constant="10" id="8Lb-d6-s6G"/>
+                <constraint firstAttribute="trailing" secondItem="zaC-Ph-zvT" secondAttribute="trailing" constant="20" id="EiL-mV-lXl"/>
+                <constraint firstItem="zaC-Ph-zvT" firstAttribute="top" secondItem="Cvy-Ql-Mhc" secondAttribute="bottom" constant="10" id="NOh-FB-Nlo"/>
+                <constraint firstItem="Cvy-Ql-Mhc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="WjR-Gq-DGY"/>
+                <constraint firstItem="Cvy-Ql-Mhc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d3X-Lb-zeb"/>
+                <constraint firstAttribute="bottom" secondItem="zaC-Ph-zvT" secondAttribute="bottom" constant="10" id="rII-gk-1p8"/>
+                <constraint firstItem="VXb-Oe-hgV" firstAttribute="bottom" secondItem="Cvy-Ql-Mhc" secondAttribute="bottom" constant="-10" id="wk3-aP-8hi"/>
+            </constraints>
+            <size key="customSize" width="394" height="496"/>
+            <connections>
+                <outlet property="btnMessaged" destination="VXb-Oe-hgV" id="kCB-Dr-lYp"/>
+                <outlet property="imgCard" destination="Cvy-Ql-Mhc" id="Bwh-PK-C5c"/>
+                <outlet property="lblNameAge" destination="PtW-nv-mME" id="Xlp-7M-74W"/>
+                <outlet property="lblProfression" destination="kWV-Nb-Ewv" id="Oaw-TO-7sp"/>
+                <outlet property="lblStateCountry" destination="bmT-Jx-uIv" id="N7E-E8-DWz"/>
+            </connections>
+            <point key="canvasLocation" x="279.38931297709922" y="176.7605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card" width="512" height="558"/>
+        <namedColor name="ColorLabel">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlue">
+            <color red="0.2196078431372549" green="0.28235294117647058" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

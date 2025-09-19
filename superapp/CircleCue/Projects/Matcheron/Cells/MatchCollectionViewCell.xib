@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-Medium.ttf">
+            <string>Baloo2-Medium</string>
+        </array>
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MatchCollectionViewCell" id="gTV-IL-0wX" customClass="MatchCollectionViewCell" customModule="Matcheron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="181"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="181"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-Kf-KpP">
+                        <rect key="frame" x="2" y="2" width="235" height="177"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemGray5Color"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="yww-04-3BV">
+                        <rect key="frame" x="74.5" y="10" width="90" height="90"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.90196078430000004" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="WHM-PG-7fD"/>
+                            <constraint firstAttribute="width" constant="90" id="Ymo-u0-8MQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="TextPink"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wayne Nguyen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFZ-j8-Xgo">
+                        <rect key="frame" x="10" y="105" width="219" height="35.5"/>
+                        <fontDescription key="fontDescription" name="Baloo2-Medium" family="Baloo 2" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viet Nam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPl-je-UWi">
+                        <rect key="frame" x="20" y="140.5" width="199" height="29"/>
+                        <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="HPl-je-UWi" firstAttribute="top" secondItem="sFZ-j8-Xgo" secondAttribute="bottom" id="8MO-C3-dmR"/>
+                <constraint firstAttribute="trailing" secondItem="4zG-Kf-KpP" secondAttribute="trailing" constant="2" id="McK-4j-Wt3"/>
+                <constraint firstItem="4zG-Kf-KpP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="PtF-Py-mKL"/>
+                <constraint firstItem="sFZ-j8-Xgo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="VDV-lD-oVm"/>
+                <constraint firstAttribute="trailing" secondItem="HPl-je-UWi" secondAttribute="trailing" constant="20" id="c4z-up-FvC"/>
+                <constraint firstAttribute="bottom" secondItem="4zG-Kf-KpP" secondAttribute="bottom" constant="2" id="g1l-WU-bfm"/>
+                <constraint firstItem="HPl-je-UWi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="iUh-dI-lhm"/>
+                <constraint firstItem="yww-04-3BV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jfq-A5-j05"/>
+                <constraint firstItem="4zG-Kf-KpP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="kaK-rM-Gy4"/>
+                <constraint firstItem="yww-04-3BV" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="lP9-Xt-7Sh"/>
+                <constraint firstItem="sFZ-j8-Xgo" firstAttribute="top" secondItem="yww-04-3BV" secondAttribute="bottom" constant="5" id="lZZ-9v-XeJ"/>
+                <constraint firstAttribute="trailing" secondItem="sFZ-j8-Xgo" secondAttribute="trailing" constant="10" id="w91-FZ-NdS"/>
+            </constraints>
+            <size key="customSize" width="239" height="181"/>
+            <connections>
+                <outlet property="imgAvatar" destination="yww-04-3BV" id="Q6R-UJ-TRy"/>
+                <outlet property="lblAddress" destination="HPl-je-UWi" id="Rzu-Pz-3Rq"/>
+                <outlet property="lblName" destination="sFZ-j8-Xgo" id="Zyb-0s-1X9"/>
+            </connections>
+            <point key="canvasLocation" x="274.63768115942031" y="196.54017857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card" width="512" height="558"/>
+        <namedColor name="TextPink">
+            <color red="0.94117647058823528" green="0.45098039215686275" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

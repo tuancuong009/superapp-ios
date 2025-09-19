@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Italic.ttf">
+            <string>Poppins-Italic</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LeftTableViewRRCell" rowHeight="94" id="KGk-i7-Jjw" customClass="LeftTableViewRRCell" customModule="SuperApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNU-9t-VTX" customClass="CustomViewRR" customModule="SuperApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="287" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label asadasd á d ád a dá d á dá d á dá d á dá d á d ád" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcE-FA-mBT">
+                                <rect key="frame" x="10" y="10" width="267" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="ZNR-5n-KY6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="10 mins ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z2-0f-YEM">
+                                <rect key="frame" x="10" y="60" width="267" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Italic" family="Poppins" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46666666670000001" green="0.4941176471" blue="0.56470588239999997" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Z2-0f-YEM" firstAttribute="leading" secondItem="gNU-9t-VTX" secondAttribute="leading" constant="10" id="4lf-vX-zkO"/>
+                            <constraint firstItem="5Z2-0f-YEM" firstAttribute="top" secondItem="BcE-FA-mBT" secondAttribute="bottom" constant="5" id="eYj-S0-iUQ"/>
+                            <constraint firstItem="BcE-FA-mBT" firstAttribute="top" secondItem="gNU-9t-VTX" secondAttribute="top" constant="10" id="emo-TD-wWY"/>
+                            <constraint firstItem="BcE-FA-mBT" firstAttribute="leading" secondItem="gNU-9t-VTX" secondAttribute="leading" constant="10" id="m5X-If-RgX"/>
+                            <constraint firstAttribute="bottom" secondItem="5Z2-0f-YEM" secondAttribute="bottom" constant="5.5" id="o3y-X9-u5B"/>
+                            <constraint firstItem="5Z2-0f-YEM" firstAttribute="trailing" secondItem="BcE-FA-mBT" secondAttribute="trailing" id="qYl-up-n8a"/>
+                            <constraint firstAttribute="trailing" secondItem="BcE-FA-mBT" secondAttribute="trailing" constant="10" id="uss-1A-EQd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gNU-9t-VTX" secondAttribute="bottom" constant="5" id="6CW-xc-NOL"/>
+                    <constraint firstItem="BcE-FA-mBT" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.875" id="Dy6-7W-dc6"/>
+                    <constraint firstItem="gNU-9t-VTX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jhq-T5-1Bk"/>
+                    <constraint firstItem="gNU-9t-VTX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ueT-Bg-FAI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblMessage" destination="BcE-FA-mBT" id="qrZ-ui-uEu"/>
+                <outlet property="lblTime" destination="5Z2-0f-YEM" id="XZS-Iw-9lS"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="169.41964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

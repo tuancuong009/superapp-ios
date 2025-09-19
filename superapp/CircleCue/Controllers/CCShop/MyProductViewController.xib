@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProductViewController" customModule="CircleCue" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoResult" destination="DK4-NZ-CcI" id="XOg-Om-clj"/>
+                <outlet property="tblProducts" destination="S4i-0w-Zu8" id="WQN-Zd-vJL"/>
+                <outlet property="topBarMenuView" destination="e7d-aV-1u7" id="KUX-bi-7OW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VPa-uY-VAz">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-aV-1u7" customClass="TopbarView" customModule="CircleCue" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oSS-HR-kNR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="My Products"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showRightMenu" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftButtonType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rightButtonType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="S4i-0w-Zu8">
+                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FuS-kn-A1o"/>
+                        <outlet property="delegate" destination="-1" id="tYa-Ro-9zW"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Results" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK4-NZ-CcI">
+                    <rect key="frame" x="159" y="415" width="74.333333333333343" height="21.666666666666686"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VPa-uY-VAz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5zy-BE-xfT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S4i-0w-Zu8" secondAttribute="trailing" id="Gse-cU-7Eg"/>
+                <constraint firstItem="VPa-uY-VAz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KXm-kJ-9AI"/>
+                <constraint firstItem="e7d-aV-1u7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PeC-nZ-YrX"/>
+                <constraint firstAttribute="bottom" secondItem="VPa-uY-VAz" secondAttribute="bottom" id="Q5q-RY-Eaf"/>
+                <constraint firstItem="VPa-uY-VAz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S8Y-Rw-4Vy"/>
+                <constraint firstItem="S4i-0w-Zu8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TCa-xk-QFz"/>
+                <constraint firstItem="e7d-aV-1u7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V4H-Pu-oZb"/>
+                <constraint firstItem="e7d-aV-1u7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Vqf-Te-07r"/>
+                <constraint firstItem="S4i-0w-Zu8" firstAttribute="top" secondItem="e7d-aV-1u7" secondAttribute="bottom" id="X22-xZ-RsA"/>
+                <constraint firstItem="DK4-NZ-CcI" firstAttribute="centerX" secondItem="S4i-0w-Zu8" secondAttribute="centerX" id="ZJa-Xu-M2k"/>
+                <constraint firstItem="DK4-NZ-CcI" firstAttribute="top" secondItem="S4i-0w-Zu8" secondAttribute="top" constant="20" id="nCW-U3-QDg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S4i-0w-Zu8" secondAttribute="bottom" id="qL5-at-hJU"/>
+            </constraints>
+            <point key="canvasLocation" x="-66" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="414" height="780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

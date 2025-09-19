@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InquiryReceivedViewController" customModule="CircleCue" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoResult" destination="hy0-xB-zOl" id="0dS-Cb-8ai"/>
+                <outlet property="tblProducts" destination="AJf-WX-OwE" id="Jnb-xm-CSB"/>
+                <outlet property="topBarMenuView" destination="H43-uz-mp8" id="mKw-fm-42L"/>
+                <outlet property="view" destination="gMb-CZ-1Jd" id="iS5-CJ-UVC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gMb-CZ-1Jd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-SI-X8B">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H43-uz-mp8" customClass="TopbarView" customModule="CircleCue" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NCf-FL-qH4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Inquiry Received"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showRightMenu" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftButtonType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rightButtonType">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-WX-OwE">
+                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5UO-Ra-sCq"/>
+                        <outlet property="delegate" destination="-1" id="fL3-HK-Kbz"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Results" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy0-xB-zOl">
+                    <rect key="frame" x="159" y="415" width="74.333333333333343" height="21.666666666666686"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PyI-Lj-Shf"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AJf-WX-OwE" firstAttribute="top" secondItem="H43-uz-mp8" secondAttribute="bottom" id="NIe-VM-KNh"/>
+                <constraint firstItem="PyI-Lj-Shf" firstAttribute="bottom" secondItem="AJf-WX-OwE" secondAttribute="bottom" id="PZR-CQ-XPX"/>
+                <constraint firstItem="H43-uz-mp8" firstAttribute="leading" secondItem="PyI-Lj-Shf" secondAttribute="leading" id="U1L-no-Hbj"/>
+                <constraint firstItem="hy0-xB-zOl" firstAttribute="centerX" secondItem="AJf-WX-OwE" secondAttribute="centerX" id="XzC-fm-APS"/>
+                <constraint firstItem="hy0-xB-zOl" firstAttribute="top" secondItem="AJf-WX-OwE" secondAttribute="top" constant="20" id="am3-Jy-Mnp"/>
+                <constraint firstItem="FYW-SI-X8B" firstAttribute="top" secondItem="gMb-CZ-1Jd" secondAttribute="top" id="bQM-tj-5HP"/>
+                <constraint firstItem="H43-uz-mp8" firstAttribute="trailing" secondItem="PyI-Lj-Shf" secondAttribute="trailing" id="gWZ-hZ-LwR"/>
+                <constraint firstItem="FYW-SI-X8B" firstAttribute="trailing" secondItem="PyI-Lj-Shf" secondAttribute="trailing" id="lmn-lc-n81"/>
+                <constraint firstAttribute="bottom" secondItem="FYW-SI-X8B" secondAttribute="bottom" id="pJc-jw-pGi"/>
+                <constraint firstItem="AJf-WX-OwE" firstAttribute="leading" secondItem="PyI-Lj-Shf" secondAttribute="leading" id="qMS-fD-Q5E"/>
+                <constraint firstItem="H43-uz-mp8" firstAttribute="top" secondItem="PyI-Lj-Shf" secondAttribute="top" id="qNK-sA-7vh"/>
+                <constraint firstItem="FYW-SI-X8B" firstAttribute="leading" secondItem="PyI-Lj-Shf" secondAttribute="leading" id="uLB-TK-SWs"/>
+                <constraint firstItem="PyI-Lj-Shf" firstAttribute="trailing" secondItem="AJf-WX-OwE" secondAttribute="trailing" id="xQ1-Cc-4fW"/>
+            </constraints>
+            <point key="canvasLocation" x="-66" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_bg" width="414" height="780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

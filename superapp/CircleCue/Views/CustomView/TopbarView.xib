@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-SemiBold.otf">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopbarView" customModule="CircleCue" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Mex-kw-OhC"/>
+                <outlet property="leftButton" destination="dW3-Dm-4Ab" id="ahi-r4-OuI"/>
+                <outlet property="rightButton" destination="ZNc-8D-UtI" id="Gmw-sp-3cH"/>
+                <outlet property="titleLabel" destination="969-mq-LUl" id="ke4-qP-Ny5"/>
+                <outlet property="titleLogo" destination="i9S-06-cba" id="eOL-fB-etw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW3-Dm-4Ab">
+                    <rect key="frame" x="16" y="7.5" width="35" height="35"/>
+                    <color key="backgroundColor" name="DarkBrown_4d0f28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="Ye8-Ac-49S"/>
+                        <constraint firstAttribute="width" secondItem="dW3-Dm-4Ab" secondAttribute="height" multiplier="1:1" id="zO1-RG-O8v"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                    <state key="normal" image="ic_sidemenu"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="menuAction:" destination="-1" eventType="touchUpInside" id="7hO-dO-hxz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNc-8D-UtI">
+                    <rect key="frame" x="363" y="7.5" width="35" height="35"/>
+                    <color key="backgroundColor" name="DarkBrown_4d0f28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="6l9-Xh-wdY"/>
+                        <constraint firstAttribute="width" secondItem="ZNc-8D-UtI" secondAttribute="height" multiplier="1:1" id="ywp-fb-HUz"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                    <state key="normal" image="ic_edit"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="rightMenuAction:" destination="-1" eventType="touchUpInside" id="MvA-iu-FIo"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="i9S-06-cba">
+                    <rect key="frame" x="51" y="8" width="312" height="34"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="969-mq-LUl">
+                    <rect key="frame" x="51" y="15.5" width="312" height="23.5"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="20"/>
+                    <color key="textColor" name="Yellow_ECE590"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="969-mq-LUl" firstAttribute="leading" secondItem="dW3-Dm-4Ab" secondAttribute="trailing" id="6GH-E9-fQT"/>
+                <constraint firstItem="dW3-Dm-4Ab" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pow-BI-Tbs"/>
+                <constraint firstItem="i9S-06-cba" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rdl-l5-AwU"/>
+                <constraint firstAttribute="trailing" secondItem="ZNc-8D-UtI" secondAttribute="trailing" constant="16" id="ZlY-V5-GeE"/>
+                <constraint firstAttribute="bottom" secondItem="i9S-06-cba" secondAttribute="bottom" constant="8" id="bSR-44-YIW"/>
+                <constraint firstItem="ZNc-8D-UtI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="d6C-qR-MD3"/>
+                <constraint firstItem="dW3-Dm-4Ab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="dNj-vS-DcX"/>
+                <constraint firstItem="i9S-06-cba" firstAttribute="leading" secondItem="dW3-Dm-4Ab" secondAttribute="trailing" id="ob4-WV-5ux"/>
+                <constraint firstItem="ZNc-8D-UtI" firstAttribute="leading" secondItem="969-mq-LUl" secondAttribute="trailing" id="qdt-UK-nLE"/>
+                <constraint firstItem="969-mq-LUl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="2" id="vT2-jG-VUo"/>
+                <constraint firstItem="ZNc-8D-UtI" firstAttribute="leading" secondItem="i9S-06-cba" secondAttribute="trailing" id="yQr-Dj-3Da"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_edit" width="30" height="30"/>
+        <image name="ic_logo" width="400" height="93.5"/>
+        <image name="ic_sidemenu" width="40" height="40"/>
+        <namedColor name="DarkBrown_4d0f28">
+            <color red="0.30196078431372547" green="0.058823529411764705" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Yellow_ECE590">
+            <color red="0.92549019607843142" green="0.89803921568627454" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

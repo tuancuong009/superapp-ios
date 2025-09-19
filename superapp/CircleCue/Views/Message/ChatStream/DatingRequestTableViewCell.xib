@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="229" id="KGk-i7-Jjw" customClass="DatingRequestTableViewCell" customModule="CircleCue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aZ-TN-LZ3">
+                        <rect key="frame" x="15" y="10" width="335" height="203.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Del-JE-hVy">
+                                <rect key="frame" x="15" y="15" width="305" height="100.5"/>
+                                <string key="text">Hello: I’m interested to explore Dating Circle option with you. You can take a look at my CircleCue Profile; if interested please reply.  Thanks</string>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yzI-fD-N2u">
+                                <rect key="frame" x="15" y="135.5" width="305" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-EI-kE2">
+                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleColor" name="DarkBrown_4d0f28"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="responseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sQg-te-pyu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCd-gy-qJZ">
+                                        <rect key="frame" x="157.5" y="0.0" width="147.5" height="29"/>
+                                        <color key="backgroundColor" name="DarkBrown_4d0f28"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="responseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XaC-FD-tBW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="July 10.2021" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwj-LE-0hT">
+                                <rect key="frame" x="15" y="179.5" width="305" height="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="11"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Blue_22a9e1"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yzI-fD-N2u" firstAttribute="leading" secondItem="0aZ-TN-LZ3" secondAttribute="leading" constant="15" id="15C-Bk-ZDW"/>
+                            <constraint firstItem="rwj-LE-0hT" firstAttribute="leading" secondItem="yzI-fD-N2u" secondAttribute="leading" id="3Yq-Vf-akk"/>
+                            <constraint firstItem="Del-JE-hVy" firstAttribute="leading" secondItem="0aZ-TN-LZ3" secondAttribute="leading" constant="15" id="8E6-br-Xft"/>
+                            <constraint firstAttribute="trailing" secondItem="Del-JE-hVy" secondAttribute="trailing" constant="15" id="9Fn-On-0uM"/>
+                            <constraint firstItem="rwj-LE-0hT" firstAttribute="top" secondItem="yzI-fD-N2u" secondAttribute="bottom" constant="15" id="Kqn-Li-iHg"/>
+                            <constraint firstItem="Del-JE-hVy" firstAttribute="top" secondItem="0aZ-TN-LZ3" secondAttribute="top" constant="15" id="LN2-Dn-V5d"/>
+                            <constraint firstItem="yzI-fD-N2u" firstAttribute="top" secondItem="Del-JE-hVy" secondAttribute="bottom" constant="20" id="SH2-Nx-bkH"/>
+                            <constraint firstAttribute="trailing" secondItem="yzI-fD-N2u" secondAttribute="trailing" constant="15" id="ToD-6O-7zY"/>
+                            <constraint firstAttribute="bottom" secondItem="rwj-LE-0hT" secondAttribute="bottom" constant="10" id="mB5-Rv-tGG"/>
+                            <constraint firstAttribute="trailing" secondItem="rwj-LE-0hT" secondAttribute="trailing" constant="15" id="zkp-gl-LfC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0aZ-TN-LZ3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6og-DH-mNe"/>
+                    <constraint firstItem="0aZ-TN-LZ3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="DdH-df-ZgR"/>
+                    <constraint firstAttribute="trailing" secondItem="0aZ-TN-LZ3" secondAttribute="trailing" constant="60" id="PfM-FI-OpJ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0aZ-TN-LZ3" secondAttribute="bottom" constant="10" id="cBh-F0-LEq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contentLabel" destination="Del-JE-hVy" id="LUX-cd-8eo"/>
+                <outlet property="dateTimeLabel" destination="rwj-LE-0hT" id="Foa-gY-76i"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="194.53125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Blue_22a9e1">
+            <color red="0.13333333333333333" green="0.66274509803921566" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="DarkBrown_4d0f28">
+            <color red="0.30196078431372547" green="0.058823529411764705" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

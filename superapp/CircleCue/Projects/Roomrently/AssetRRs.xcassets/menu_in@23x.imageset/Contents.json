@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "menu_in@23x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

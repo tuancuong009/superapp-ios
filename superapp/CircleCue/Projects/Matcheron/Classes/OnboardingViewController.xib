@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-SemiBold.ttf">
+            <string>Baloo2-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="SuperApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cltProfile" destination="glm-p3-gcX" id="2uC-Vw-N4h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_homemt" translatesAutoresizingMaskIntoConstraints="NO" id="P6U-po-2N1">
+                    <rect key="frame" x="126" y="0.0" width="267" height="359"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDc-pn-J2K">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="va9-Pr-YYi">
+                    <rect key="frame" x="0.0" y="59.000000000000014" width="393" height="183.33333333333337"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-ek-DdF">
+                            <rect key="frame" x="20" y="0.0" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="GUQ-Se-Pxy"/>
+                                <constraint firstAttribute="width" constant="50" id="Jw6-c3-Z54"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="btn_back_black"/>
+                            <connections>
+                                <action selector="doBack:" destination="-1" eventType="touchUpInside" id="tVs-l0-I2t"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fY5-v5-kMT">
+                            <rect key="frame" x="20" y="20" width="353" height="163.33333333333334"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfectly Matched" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFq-La-JYE">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="51.333333333333336"/>
+                                    <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="32"/>
+                                    <color key="textColor" name="TextPink"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSh-1J-c5r">
+                                    <rect key="frame" x="0.0" y="61.333333333333343" width="353" height="40"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GEx-o4-ofa">
+                                            <rect key="frame" x="66.666666666666686" y="0.0" width="220" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrL-X4-K1I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                                    <color key="backgroundColor" name="TextPink"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="rtC-eF-5yt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="20"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Login">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="TextPink"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="doLogin:" destination="-1" eventType="touchUpInside" id="mbR-W5-Rcm"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlB-Wr-tWi">
+                                                    <rect key="frame" x="120" y="0.0" width="100" height="40"/>
+                                                    <color key="backgroundColor" red="0.2627450980392157" green="0.30196078431372547" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="zm6-iK-gHw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="20"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Join">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="doJoin:" destination="-1" eventType="touchUpInside" id="pVN-zF-JWa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="0p1-ZB-t0i"/>
+                                        <constraint firstItem="GEx-o4-ofa" firstAttribute="centerX" secondItem="WSh-1J-c5r" secondAttribute="centerX" id="2Ui-wh-EGU"/>
+                                        <constraint firstAttribute="bottom" secondItem="GEx-o4-ofa" secondAttribute="bottom" id="ufj-ed-Xng"/>
+                                        <constraint firstItem="GEx-o4-ofa" firstAttribute="top" secondItem="WSh-1J-c5r" secondAttribute="top" id="zAE-a6-zd4"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="csK-e0-5g1">
+                                    <rect key="frame" x="0.0" y="111.33333333333334" width="353" height="52"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7dR-ek-DdF" firstAttribute="leading" secondItem="va9-Pr-YYi" secondAttribute="leading" constant="20" id="2d4-xN-ewI"/>
+                        <constraint firstAttribute="trailing" secondItem="fY5-v5-kMT" secondAttribute="trailing" constant="20" id="E0C-Yw-tv1"/>
+                        <constraint firstItem="7dR-ek-DdF" firstAttribute="top" secondItem="va9-Pr-YYi" secondAttribute="top" id="NGu-ig-UjO"/>
+                        <constraint firstItem="fY5-v5-kMT" firstAttribute="leading" secondItem="va9-Pr-YYi" secondAttribute="leading" constant="20" id="SIG-Jl-vii"/>
+                        <constraint firstItem="fY5-v5-kMT" firstAttribute="top" secondItem="va9-Pr-YYi" secondAttribute="top" constant="20" id="Xl6-QM-7lm"/>
+                        <constraint firstAttribute="bottom" secondItem="fY5-v5-kMT" secondAttribute="bottom" id="rfn-Tq-kY9"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="glm-p3-gcX">
+                    <rect key="frame" x="20" y="252.33333333333331" width="353" height="599.66666666666674"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1sX-0J-0YS">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="40"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="q86-jD-C7Z"/>
+                        <outlet property="delegate" destination="-1" id="CCw-Mo-hQG"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="P6U-po-2N1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3yS-g3-tv8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vDc-pn-J2K" secondAttribute="trailing" id="4DQ-Ko-Odu"/>
+                <constraint firstItem="vDc-pn-J2K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Rx-7Z-pCf"/>
+                <constraint firstItem="va9-Pr-YYi" firstAttribute="top" secondItem="vDc-pn-J2K" secondAttribute="bottom" id="EJk-jn-S2M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="va9-Pr-YYi" secondAttribute="trailing" id="I6g-4l-5NA"/>
+                <constraint firstItem="glm-p3-gcX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QMt-Vd-Ikk"/>
+                <constraint firstAttribute="bottom" secondItem="glm-p3-gcX" secondAttribute="bottom" id="SST-nb-fYs"/>
+                <constraint firstItem="va9-Pr-YYi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Vqi-A3-wF8"/>
+                <constraint firstItem="va9-Pr-YYi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dPC-Di-a29"/>
+                <constraint firstItem="vDc-pn-J2K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hvl-jM-fkE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P6U-po-2N1" secondAttribute="trailing" id="ikS-lj-tGP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="glm-p3-gcX" secondAttribute="trailing" constant="20" id="j2V-w8-lFD"/>
+                <constraint firstItem="glm-p3-gcX" firstAttribute="top" secondItem="va9-Pr-YYi" secondAttribute="bottom" constant="10" id="qtD-he-GzC"/>
+            </constraints>
+            <point key="canvasLocation" x="27" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_logo" width="199" height="52"/>
+        <image name="bg_homemt" width="267" height="359"/>
+        <image name="btn_back_black" width="30" height="30"/>
+        <namedColor name="TextPink">
+            <color red="0.94117647058823528" green="0.45098039215686275" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

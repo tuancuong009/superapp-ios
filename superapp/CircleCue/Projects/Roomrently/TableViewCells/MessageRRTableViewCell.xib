@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Italic.ttf">
+            <string>Poppins-Italic</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="MessageRRTableViewCell" customModule="SuperApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293.5" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="#1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYv-1i-QvI">
+                        <rect key="frame" x="80" y="10" width="193.5" height="21"/>
+                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJv-3d-f2I">
+                        <rect key="frame" x="80" y="63.5" width="193.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Italic" family="Poppins" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-Ru-7A3">
+                        <rect key="frame" x="80" y="36" width="19" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNO-sY-jjH">
+                        <rect key="frame" x="275" y="42.5" width="13.5" height="10"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_received" translatesAutoresizingMaskIntoConstraints="NO" id="qLD-Sn-dcs">
+                                <rect key="frame" x="0.0" y="0.0" width="13.5" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="hcT-Kz-wFh"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PUF-NS-9U9">
+                        <rect key="frame" x="20" y="20.5" width="50" height="50"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="b0u-wm-IQW"/>
+                            <constraint firstAttribute="height" constant="50" id="giq-hj-Ngj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZv-au-WkR">
+                        <rect key="frame" x="20" y="90" width="253.5" height="1"/>
+                        <color key="backgroundColor" white="0.67000000000000004" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6Cr-BV-NZe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MZv-au-WkR" secondAttribute="trailing" constant="20" id="364-fp-ZdN"/>
+                    <constraint firstItem="MZv-au-WkR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9km-xW-xf0"/>
+                    <constraint firstItem="QJv-3d-f2I" firstAttribute="top" secondItem="V0X-Ru-7A3" secondAttribute="bottom" constant="5" id="DTr-XX-8iK"/>
+                    <constraint firstItem="LNO-sY-jjH" firstAttribute="centerY" secondItem="V0X-Ru-7A3" secondAttribute="centerY" id="F6Q-s4-6dw"/>
+                    <constraint firstAttribute="bottom" secondItem="QJv-3d-f2I" secondAttribute="bottom" constant="12" id="Fx9-Fv-vAZ"/>
+                    <constraint firstItem="BYv-1i-QvI" firstAttribute="leading" secondItem="PUF-NS-9U9" secondAttribute="trailing" constant="10" id="IAF-YQ-eWZ"/>
+                    <constraint firstItem="PUF-NS-9U9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KBN-yL-AdF"/>
+                    <constraint firstItem="LNO-sY-jjH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V0X-Ru-7A3" secondAttribute="trailing" constant="10" id="KJ9-Dw-rAv"/>
+                    <constraint firstItem="V0X-Ru-7A3" firstAttribute="top" secondItem="BYv-1i-QvI" secondAttribute="bottom" constant="5" id="TSi-qO-BWC"/>
+                    <constraint firstItem="BYv-1i-QvI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xw8-0C-XsO"/>
+                    <constraint firstItem="QJv-3d-f2I" firstAttribute="leading" secondItem="PUF-NS-9U9" secondAttribute="trailing" constant="10" id="b6a-Dl-1ce"/>
+                    <constraint firstAttribute="trailing" secondItem="LNO-sY-jjH" secondAttribute="trailing" constant="5" id="gnI-wm-GNd"/>
+                    <constraint firstAttribute="bottom" secondItem="MZv-au-WkR" secondAttribute="bottom" id="j7X-sq-ffo"/>
+                    <constraint firstItem="PUF-NS-9U9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mmh-qd-D6Z"/>
+                    <constraint firstItem="V0X-Ru-7A3" firstAttribute="leading" secondItem="PUF-NS-9U9" secondAttribute="trailing" constant="10" id="n5P-VH-7lo"/>
+                    <constraint firstAttribute="trailing" secondItem="BYv-1i-QvI" secondAttribute="trailing" constant="20" id="uoY-tE-eat"/>
+                    <constraint firstAttribute="trailing" secondItem="QJv-3d-f2I" secondAttribute="trailing" constant="20" id="yzc-TA-Qvb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="icRead" destination="qLD-Sn-dcs" id="jjv-qM-hce"/>
+                <outlet property="imgAvatar" destination="PUF-NS-9U9" id="641-tB-7kU"/>
+                <outlet property="lblDate" destination="QJv-3d-f2I" id="C50-gA-qZt"/>
+                <outlet property="lblFrom" destination="BYv-1i-QvI" id="8sd-8T-UEQ"/>
+                <outlet property="lblMessage" destination="V0X-Ru-7A3" id="rgM-1Y-w7h"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_received" width="13.5" height="10"/>
+    </resources>
+</document>

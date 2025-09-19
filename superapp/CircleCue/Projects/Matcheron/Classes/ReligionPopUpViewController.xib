@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+        <array key="Baloo2-SemiBold.ttf">
+            <string>Baloo2-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReligionPopUpViewController" customModule="Matcheron" customModuleProvider="target">
+            <connections>
+                <outlet property="btnYes" destination="iiu-9f-lyF" id="eh1-SE-GNs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-XP-CVf">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFu-gG-YGt">
+                    <rect key="frame" x="20" y="269.33333333333326" width="353" height="338.66666666666674"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nT5-Mv-qJw">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="172.66666666666666"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KNc-lS-gX0">
+                                    <rect key="frame" x="77" y="30" width="199" height="52"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure the religion you selected is the correct one?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtj-Fq-5o6">
+                                    <rect key="frame" x="20" y="102" width="313" height="70.666666666666686"/>
+                                    <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="22"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wtj-Fq-5o6" secondAttribute="trailing" constant="20" id="3dH-VP-xxG"/>
+                                <constraint firstItem="wtj-Fq-5o6" firstAttribute="centerX" secondItem="nT5-Mv-qJw" secondAttribute="centerX" id="9PT-Ys-5Iu"/>
+                                <constraint firstItem="wtj-Fq-5o6" firstAttribute="top" secondItem="KNc-lS-gX0" secondAttribute="bottom" constant="20" id="GJ6-ND-HW2"/>
+                                <constraint firstItem="KNc-lS-gX0" firstAttribute="top" secondItem="nT5-Mv-qJw" secondAttribute="top" constant="30" id="XnD-ZH-nvE"/>
+                                <constraint firstItem="KNc-lS-gX0" firstAttribute="centerX" secondItem="nT5-Mv-qJw" secondAttribute="centerX" id="f6t-9q-HmG"/>
+                                <constraint firstAttribute="bottom" secondItem="wtj-Fq-5o6" secondAttribute="bottom" id="kAA-vv-wHl"/>
+                                <constraint firstItem="wtj-Fq-5o6" firstAttribute="leading" secondItem="nT5-Mv-qJw" secondAttribute="leading" constant="20" id="lML-2o-Z51"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiu-9f-lyF">
+                            <rect key="frame" x="140" y="192.66666666666669" width="73" height="48"/>
+                            <color key="backgroundColor" name="TextPink"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="OxI-QH-vH3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="22"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="YES, I'm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doYes:" destination="-1" eventType="touchUpInside" id="DAe-v0-c2d"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UI-nW-qKJ">
+                            <rect key="frame" x="56.666666666666686" y="260.66666666666669" width="240" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="Yni-61-Evr"/>
+                                <constraint firstAttribute="height" constant="48" id="djd-7a-8e8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="22"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Wait let me correct it.">
+                                <color key="titleColor" name="ColorPlaceholder"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="ColorPlaceholder"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doDissmiss:" destination="-1" eventType="touchUpInside" id="y5g-N8-HY2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="iiu-9f-lyF" firstAttribute="top" secondItem="nT5-Mv-qJw" secondAttribute="bottom" constant="20" id="0DN-VA-0dG"/>
+                        <constraint firstAttribute="bottom" secondItem="1UI-nW-qKJ" secondAttribute="bottom" constant="30" id="DHi-u0-olj"/>
+                        <constraint firstItem="iiu-9f-lyF" firstAttribute="centerX" secondItem="qFu-gG-YGt" secondAttribute="centerX" id="FSm-tt-ZiJ"/>
+                        <constraint firstItem="nT5-Mv-qJw" firstAttribute="leading" secondItem="qFu-gG-YGt" secondAttribute="leading" id="LgY-jX-Uqw"/>
+                        <constraint firstItem="nT5-Mv-qJw" firstAttribute="top" secondItem="qFu-gG-YGt" secondAttribute="top" id="U53-L0-1rg"/>
+                        <constraint firstItem="1UI-nW-qKJ" firstAttribute="top" secondItem="iiu-9f-lyF" secondAttribute="bottom" constant="20" id="UNY-bx-pSb"/>
+                        <constraint firstItem="1UI-nW-qKJ" firstAttribute="centerX" secondItem="qFu-gG-YGt" secondAttribute="centerX" id="W9F-SN-xhe"/>
+                        <constraint firstAttribute="trailing" secondItem="nT5-Mv-qJw" secondAttribute="trailing" id="hyv-Z6-MJB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="TextPink"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6DH-XP-CVf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="55Q-nJ-cCd"/>
+                <constraint firstAttribute="bottom" secondItem="6DH-XP-CVf" secondAttribute="bottom" id="9KM-R4-i7d"/>
+                <constraint firstItem="qFu-gG-YGt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ObU-CK-smg"/>
+                <constraint firstItem="6DH-XP-CVf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d4b-Xz-qwe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qFu-gG-YGt" secondAttribute="trailing" constant="20" id="lko-dF-bVY"/>
+                <constraint firstItem="qFu-gG-YGt" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="o9a-Ha-p9x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6DH-XP-CVf" secondAttribute="trailing" id="tNg-Os-69d"/>
+            </constraints>
+            <point key="canvasLocation" x="27" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_logo" width="199" height="52"/>
+        <namedColor name="ColorPlaceholder">
+            <color red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPink">
+            <color red="0.94117647058823528" green="0.45098039215686275" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

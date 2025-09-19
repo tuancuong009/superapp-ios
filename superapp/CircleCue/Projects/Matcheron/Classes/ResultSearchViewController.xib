@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+        <array key="Baloo2-SemiBold.ttf">
+            <string>Baloo2-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultSearchViewController" customModule="Matcheron" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="AeH-Ob-aUU" id="zTM-55-sJZ"/>
+                <outlet property="btnPrev" destination="KMD-aK-Qsa" id="4ri-Y6-hWj"/>
+                <outlet property="btnReport" destination="Oo7-3k-QU4" id="rAD-EF-ZGD"/>
+                <outlet property="cltProfile" destination="UXx-yv-Wfh" id="lgz-cH-j5a"/>
+                <outlet property="lblNavi" destination="x3v-97-qhK" id="XQw-ZR-fHK"/>
+                <outlet property="lblNoData" destination="1qV-v3-Iyi" id="fto-nR-uxe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewAction" destination="4TR-ml-rkh" id="K1r-ta-Rj2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hn-Tn-7xa">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3v-97-qhK">
+                            <rect key="frame" x="40" y="4" width="313" height="35.333333333333371"/>
+                            <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="22"/>
+                            <color key="textColor" name="TextPink"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8O-Kr-yck">
+                            <rect key="frame" x="20" y="0.0" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="6Df-zo-izf"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="btnback"/>
+                            <connections>
+                                <action selector="doBack:" destination="-1" eventType="touchUpInside" id="Sgy-d1-oK0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oo7-3k-QU4">
+                            <rect key="frame" x="330" y="0.0" width="43" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Report">
+                                <color key="titleColor" name="TextPink"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doReport:" destination="-1" eventType="touchUpInside" id="lQN-W0-wiF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="a8O-Kr-yck" firstAttribute="leading" secondItem="7hn-Tn-7xa" secondAttribute="leading" constant="20" id="28Z-AH-eb0"/>
+                        <constraint firstAttribute="bottom" secondItem="a8O-Kr-yck" secondAttribute="bottom" id="Ae7-Gh-UTc"/>
+                        <constraint firstItem="x3v-97-qhK" firstAttribute="centerX" secondItem="7hn-Tn-7xa" secondAttribute="centerX" id="FH2-ga-c6g"/>
+                        <constraint firstItem="Oo7-3k-QU4" firstAttribute="top" secondItem="7hn-Tn-7xa" secondAttribute="top" id="Gwg-h0-cP6"/>
+                        <constraint firstAttribute="bottom" secondItem="Oo7-3k-QU4" secondAttribute="bottom" id="Jre-WF-KaK"/>
+                        <constraint firstItem="x3v-97-qhK" firstAttribute="centerY" secondItem="7hn-Tn-7xa" secondAttribute="centerY" id="V09-R5-tgv"/>
+                        <constraint firstAttribute="height" constant="44" id="aqZ-on-wuM"/>
+                        <constraint firstItem="a8O-Kr-yck" firstAttribute="top" secondItem="7hn-Tn-7xa" secondAttribute="top" id="pdw-gO-tUe"/>
+                        <constraint firstAttribute="trailing" secondItem="Oo7-3k-QU4" secondAttribute="trailing" constant="20" id="s7g-GU-37I"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4TR-ml-rkh">
+                    <rect key="frame" x="20" y="758" width="353" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz1-hQ-nsr">
+                            <rect key="frame" x="0.0" y="0.0" width="111" height="50"/>
+                            <color key="backgroundColor" red="0.85098039215686272" green="0.32549019607843138" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="gna-ak-q9g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="No">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doNo:" destination="-1" eventType="touchUpInside" id="h2g-PT-B5T"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msI-dT-JdW">
+                            <rect key="frame" x="121" y="0.0" width="111" height="50"/>
+                            <color key="backgroundColor" red="0.94117647058823528" green="0.67843137254901964" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="H1C-n7-UrM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Maybe">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doMayBe:" destination="-1" eventType="touchUpInside" id="7kA-kl-Qag"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcG-vL-II8">
+                            <rect key="frame" x="242" y="0.0" width="111" height="50"/>
+                            <color key="backgroundColor" red="0.36078431372549019" green="0.72156862745098038" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ku3-Ff-uTl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Yes">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doYes:" destination="-1" eventType="touchUpInside" id="JEX-Oq-HPs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="msI-dT-JdW" firstAttribute="width" secondItem="Zz1-hQ-nsr" secondAttribute="width" id="EMb-eN-rUH"/>
+                        <constraint firstItem="pcG-vL-II8" firstAttribute="width" secondItem="msI-dT-JdW" secondAttribute="width" id="xRu-ex-PdP"/>
+                    </constraints>
+                </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UXx-yv-Wfh">
+                    <rect key="frame" x="20" y="113" width="353" height="635"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="11c-D4-M1r">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UB2-nY-wJ7"/>
+                        <outlet property="delegate" destination="-1" id="thn-3x-ftQ"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Results" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qV-v3-Iyi">
+                    <rect key="frame" x="159.66666666666666" y="163" width="73.666666666666657" height="25.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="16"/>
+                    <color key="textColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMD-aK-Qsa">
+                    <rect key="frame" x="5" y="313.33333333333331" width="62" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="j0C-iP-4eh"/>
+                        <constraint firstAttribute="height" constant="62" id="xEj-un-ip0"/>
+                    </constraints>
+                    <color key="tintColor" name="TextPink"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="doPrev:" destination="-1" eventType="touchUpInside" id="bSs-lI-VmK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeH-Ob-aUU">
+                    <rect key="frame" x="326" y="313.33333333333331" width="62" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="J9G-Af-F9i"/>
+                        <constraint firstAttribute="width" constant="62" id="avE-dh-h5g"/>
+                    </constraints>
+                    <color key="tintColor" name="TextPink"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="arrow.right" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="doNext:" destination="-1" eventType="touchUpInside" id="Jjv-Gl-0g9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UXx-yv-Wfh" secondAttribute="trailing" constant="20" id="0QH-Vq-S3J"/>
+                <constraint firstItem="7hn-Tn-7xa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6oa-L4-VaX"/>
+                <constraint firstItem="KMD-aK-Qsa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="7lk-6X-GIW"/>
+                <constraint firstItem="1qV-v3-Iyi" firstAttribute="top" secondItem="UXx-yv-Wfh" secondAttribute="top" constant="50" id="AVy-0Y-TMn"/>
+                <constraint firstItem="4TR-ml-rkh" firstAttribute="top" secondItem="UXx-yv-Wfh" secondAttribute="bottom" constant="10" id="HYq-qi-duB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4TR-ml-rkh" secondAttribute="trailing" constant="20" id="QhG-BS-3UE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4TR-ml-rkh" secondAttribute="bottom" constant="10" id="VaW-d7-N0y"/>
+                <constraint firstItem="KMD-aK-Qsa" firstAttribute="centerY" secondItem="UXx-yv-Wfh" secondAttribute="centerY" multiplier="0.8" id="Xf8-8x-ZUF"/>
+                <constraint firstItem="7hn-Tn-7xa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iwe-g1-z5R"/>
+                <constraint firstItem="AeH-Ob-aUU" firstAttribute="centerY" secondItem="KMD-aK-Qsa" secondAttribute="centerY" id="jZC-LV-Gto"/>
+                <constraint firstItem="1qV-v3-Iyi" firstAttribute="centerX" secondItem="UXx-yv-Wfh" secondAttribute="centerX" id="mv4-xR-JQc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AeH-Ob-aUU" secondAttribute="trailing" constant="5" id="oXc-NF-eY4"/>
+                <constraint firstItem="UXx-yv-Wfh" firstAttribute="top" secondItem="7hn-Tn-7xa" secondAttribute="bottom" constant="10" id="q9X-UG-awA"/>
+                <constraint firstItem="UXx-yv-Wfh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="seb-bQ-yRf"/>
+                <constraint firstItem="7hn-Tn-7xa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xha-kb-rkK"/>
+                <constraint firstItem="4TR-ml-rkh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xk0-BS-GuO"/>
+            </constraints>
+            <point key="canvasLocation" x="-141.22137404580153" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="btnback" width="22" height="22"/>
+        <namedColor name="TextPink">
+            <color red="0.94117647058823528" green="0.45098039215686275" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

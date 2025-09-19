@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeedPageCollectionViewCell" customModule="CircleCue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFe-Mk-Juf">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ppS-aJ-epc" customClass="RoundImageView" customModule="CircleCue" customModuleProvider="target">
+                                <rect key="frame" x="8" y="0.0" width="117" height="117"/>
+                                <color key="backgroundColor" name="Gray_Place_Holder"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ppS-aJ-epc" secondAttribute="height" id="p4W-rl-MA9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paula_callmepmc paula_callmepmc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-nA-GR2">
+                                <rect key="frame" x="10" y="125" width="113" height="21.5"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBq-dl-NqS">
+                                <rect key="frame" x="10" y="146.5" width="113" height="35.5"/>
+                                <string key="text">USA
+USA</string>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dBq-dl-NqS" firstAttribute="trailing" secondItem="TBT-nA-GR2" secondAttribute="trailing" id="1Xe-TX-OC8"/>
+                            <constraint firstItem="TBT-nA-GR2" firstAttribute="top" secondItem="ppS-aJ-epc" secondAttribute="bottom" constant="8" id="FP7-A1-6Ga"/>
+                            <constraint firstItem="TBT-nA-GR2" firstAttribute="leading" secondItem="hFe-Mk-Juf" secondAttribute="leading" constant="10" id="JIR-id-hcj"/>
+                            <constraint firstItem="ppS-aJ-epc" firstAttribute="centerX" secondItem="hFe-Mk-Juf" secondAttribute="centerX" id="Rb8-gN-VRJ"/>
+                            <constraint firstItem="ppS-aJ-epc" firstAttribute="top" secondItem="hFe-Mk-Juf" secondAttribute="top" id="SxW-vb-BhF"/>
+                            <constraint firstItem="dBq-dl-NqS" firstAttribute="top" secondItem="TBT-nA-GR2" secondAttribute="bottom" id="WbT-jy-9fy"/>
+                            <constraint firstItem="ppS-aJ-epc" firstAttribute="leading" secondItem="hFe-Mk-Juf" secondAttribute="leading" constant="8" id="gdj-TC-xf9"/>
+                            <constraint firstItem="dBq-dl-NqS" firstAttribute="leading" secondItem="TBT-nA-GR2" secondAttribute="leading" id="swX-Rp-W3M"/>
+                            <constraint firstAttribute="trailing" secondItem="TBT-nA-GR2" secondAttribute="trailing" constant="10" id="wcO-yO-ojd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hFe-Mk-Juf" secondAttribute="trailing" id="ZhG-ny-iu8"/>
+                <constraint firstAttribute="bottom" secondItem="hFe-Mk-Juf" secondAttribute="bottom" id="d7g-dL-CF4"/>
+                <constraint firstItem="hFe-Mk-Juf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ggZ-Kk-qrt"/>
+                <constraint firstItem="hFe-Mk-Juf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tWW-hJ-WsL"/>
+            </constraints>
+            <size key="customSize" width="218" height="229"/>
+            <connections>
+                <outlet property="avatarImageView" destination="ppS-aJ-epc" id="uUt-tq-4bG"/>
+                <outlet property="containerView" destination="hFe-Mk-Juf" id="9O2-MT-eea"/>
+                <outlet property="userCountryLabel" destination="dBq-dl-NqS" id="Ugt-iU-HOb"/>
+                <outlet property="userNameLabel" destination="TBT-nA-GR2" id="dNW-Ef-2zf"/>
+            </connections>
+            <point key="canvasLocation" x="258.69565217391306" y="190.17857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="256" height="256"/>
+        <namedColor name="Gray_Place_Holder">
+            <color red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

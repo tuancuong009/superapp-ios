@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistorySpin2WinVC" customModule="CircleCue" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNoData" destination="idu-RV-3jy" id="XJo-Fg-Nyl"/>
+                <outlet property="tblHistory" destination="He9-fC-i5y" id="dVC-mc-66U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_bg" translatesAutoresizingMaskIntoConstraints="NO" id="nwB-2z-HOZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9i-0T-x2o">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCL-z9-pci">
+                            <rect key="frame" x="16" y="5" width="35" height="35"/>
+                            <color key="backgroundColor" name="DarkBrown_4d0f28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="iSa-oH-Bwn"/>
+                            </constraints>
+                            <state key="normal" image="btn_back"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doBack:" destination="-1" eventType="touchUpInside" id="a3k-4L-PEp"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPIN2WIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmf-qD-fwF">
+                            <rect key="frame" x="171.5" y="11" width="71" height="22"/>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xCL-z9-pci" firstAttribute="leading" secondItem="L9i-0T-x2o" secondAttribute="leading" constant="16" id="0j9-Bv-qAA"/>
+                        <constraint firstItem="Pmf-qD-fwF" firstAttribute="centerX" secondItem="L9i-0T-x2o" secondAttribute="centerX" id="4TO-oS-R3B"/>
+                        <constraint firstItem="Pmf-qD-fwF" firstAttribute="centerY" secondItem="L9i-0T-x2o" secondAttribute="centerY" id="Dgt-Pq-2Jt"/>
+                        <constraint firstAttribute="height" constant="44" id="Oeh-yA-tVv"/>
+                        <constraint firstItem="xCL-z9-pci" firstAttribute="width" secondItem="xCL-z9-pci" secondAttribute="height" multiplier="1:1" id="mLM-FJ-Oiu"/>
+                        <constraint firstItem="xCL-z9-pci" firstAttribute="top" secondItem="L9i-0T-x2o" secondAttribute="top" constant="5" id="w1c-KK-x9k"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="He9-fC-i5y">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wcC-LM-npV"/>
+                        <outlet property="delegate" destination="-1" id="XTJ-jV-pZr"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Spin2Win History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idu-RV-3jy">
+                    <rect key="frame" x="138" y="138" width="138" height="20.5"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="He9-fC-i5y" secondAttribute="bottom" id="5Fu-EN-ZUy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="He9-fC-i5y" secondAttribute="trailing" id="HFQ-4m-89l"/>
+                <constraint firstItem="He9-fC-i5y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HFk-Ce-pLU"/>
+                <constraint firstItem="nwB-2z-HOZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Is4-oi-lpz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nwB-2z-HOZ" secondAttribute="trailing" id="IyQ-p2-rDb"/>
+                <constraint firstAttribute="bottom" secondItem="nwB-2z-HOZ" secondAttribute="bottom" id="Xrt-Tl-Qy9"/>
+                <constraint firstItem="nwB-2z-HOZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bgb-3c-IBS"/>
+                <constraint firstItem="idu-RV-3jy" firstAttribute="top" secondItem="L9i-0T-x2o" secondAttribute="bottom" constant="50" id="kgv-Pb-B3z"/>
+                <constraint firstItem="L9i-0T-x2o" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lLu-eF-eOy"/>
+                <constraint firstItem="He9-fC-i5y" firstAttribute="top" secondItem="L9i-0T-x2o" secondAttribute="bottom" id="nc7-LX-TAP"/>
+                <constraint firstItem="idu-RV-3jy" firstAttribute="centerX" secondItem="L9i-0T-x2o" secondAttribute="centerX" id="qsj-ks-YYz"/>
+                <constraint firstItem="L9i-0T-x2o" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sqB-ni-XDI"/>
+                <constraint firstItem="L9i-0T-x2o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ucD-rj-rCn"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back" width="30" height="30"/>
+        <image name="home_bg" width="414" height="780"/>
+        <namedColor name="DarkBrown_4d0f28">
+            <color red="0.30196078431372547" green="0.058823529411764705" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

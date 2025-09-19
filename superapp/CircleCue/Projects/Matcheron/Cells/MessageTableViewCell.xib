@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-Medium.ttf">
+            <string>Baloo2-Medium</string>
+        </array>
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MessageTableViewCell" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="Matcheron" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="v3e-nf-yHZ">
+                        <rect key="frame" x="20" y="10" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.90196078430000004" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0kV-TF-dAC"/>
+                            <constraint firstAttribute="width" constant="50" id="Ffo-Nl-Rjg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="TextPink"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wayne Nguyen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-Ly-BRv">
+                        <rect key="frame" x="80" y="5.0000000000000018" width="122.66666666666669" height="30.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Baloo2-Medium" family="Baloo 2" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 mins ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cq-vj-t6B">
+                        <rect key="frame" x="233.66666666666663" y="11.666666666666666" width="55" height="17.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dE6-w9-Wm9">
+                        <rect key="frame" x="80" y="35.666666666666664" width="35.666666666666657" height="25.666666666666664"/>
+                        <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avy-Y5-HLK">
+                        <rect key="frame" x="275.33333333333331" y="43.666666666666664" width="13.333333333333314" height="10"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_received" translatesAutoresizingMaskIntoConstraints="NO" id="oCJ-eg-URG">
+                                <rect key="frame" x="0.0" y="0.0" width="13.333333333333334" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="8Gh-MW-gE6"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3cq-vj-t6B" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FNO-Ly-BRv" secondAttribute="trailing" constant="5" id="CGT-BV-Xgu"/>
+                    <constraint firstItem="Avy-Y5-HLK" firstAttribute="centerY" secondItem="dE6-w9-Wm9" secondAttribute="centerY" id="CNL-VB-Qjv"/>
+                    <constraint firstItem="FNO-Ly-BRv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="J4k-0n-4eW"/>
+                    <constraint firstItem="v3e-nf-yHZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PMu-cW-BwQ"/>
+                    <constraint firstAttribute="trailing" secondItem="3cq-vj-t6B" secondAttribute="trailing" constant="5" id="WVy-bZ-MDb"/>
+                    <constraint firstAttribute="trailing" secondItem="Avy-Y5-HLK" secondAttribute="trailing" constant="5" id="fJr-zB-jTW"/>
+                    <constraint firstItem="dE6-w9-Wm9" firstAttribute="leading" secondItem="FNO-Ly-BRv" secondAttribute="leading" id="nDV-0Q-s9p"/>
+                    <constraint firstItem="FNO-Ly-BRv" firstAttribute="leading" secondItem="v3e-nf-yHZ" secondAttribute="trailing" constant="10" id="nyx-Wq-wmo"/>
+                    <constraint firstItem="Avy-Y5-HLK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dE6-w9-Wm9" secondAttribute="trailing" constant="5" id="oRN-Ug-v1K"/>
+                    <constraint firstItem="3cq-vj-t6B" firstAttribute="centerY" secondItem="FNO-Ly-BRv" secondAttribute="centerY" id="qgO-ui-7Ox"/>
+                    <constraint firstItem="v3e-nf-yHZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sj9-jG-0ld"/>
+                    <constraint firstItem="dE6-w9-Wm9" firstAttribute="top" secondItem="FNO-Ly-BRv" secondAttribute="bottom" id="wgn-XS-nng"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="icRead" destination="oCJ-eg-URG" id="U2T-Vf-sIH"/>
+                <outlet property="imgAvatar" destination="v3e-nf-yHZ" id="QW0-J4-e54"/>
+                <outlet property="lblMessage" destination="dE6-w9-Wm9" id="x21-lm-ZBc"/>
+                <outlet property="lblName" destination="FNO-Ly-BRv" id="FN7-eT-A5F"/>
+                <outlet property="lblTime" destination="3cq-vj-t6B" id="0N3-2N-u0q"/>
+            </connections>
+            <point key="canvasLocation" x="-140.45801526717557" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="card" width="512" height="558"/>
+        <image name="ic_received" width="13.333333015441895" height="10"/>
+        <namedColor name="TextPink">
+            <color red="0.94117647058823528" green="0.45098039215686275" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

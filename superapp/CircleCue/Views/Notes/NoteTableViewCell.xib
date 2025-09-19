@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MyriadPro-SemiBold.otf">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="528" id="KGk-i7-Jjw" customClass="NoteTableViewCell" customModule="CircleCue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="528"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="528"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="This is note without image This is note without image" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAo-36-sx3">
+                        <rect key="frame" x="15" y="15" width="312.5" height="42"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct,10 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btJ-te-zkB">
+                        <rect key="frame" x="351.5" y="13" width="77.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                        <color key="textColor" name="Yellow_ECE590"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzX-gI-0I0">
+                        <rect key="frame" x="15" y="527" width="429" height="1"/>
+                        <color key="backgroundColor" name="LineColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MKa-OX-4I1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lw7-0a-ESb">
+                        <rect key="frame" x="15" y="65" width="414" height="157.5"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QzX-gI-0I0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0qM-Yx-0oJ"/>
+                    <constraint firstAttribute="bottom" secondItem="QzX-gI-0I0" secondAttribute="bottom" id="7br-NL-3Wr"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lw7-0a-ESb" secondAttribute="bottom" constant="15" id="Bwq-0n-2d4"/>
+                    <constraint firstItem="btJ-te-zkB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DAo-36-sx3" secondAttribute="trailing" constant="15" id="QNH-RI-xXz"/>
+                    <constraint firstAttribute="trailing" secondItem="btJ-te-zkB" secondAttribute="trailing" constant="15" id="YIo-Em-GmV"/>
+                    <constraint firstItem="lw7-0a-ESb" firstAttribute="top" secondItem="DAo-36-sx3" secondAttribute="bottom" constant="8" id="ccz-bd-cGs"/>
+                    <constraint firstAttribute="trailing" secondItem="QzX-gI-0I0" secondAttribute="trailing" id="fiK-2V-DxD"/>
+                    <constraint firstItem="lw7-0a-ESb" firstAttribute="leading" secondItem="DAo-36-sx3" secondAttribute="leading" id="ohF-hI-P7b"/>
+                    <constraint firstItem="btJ-te-zkB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="szj-J4-hRR"/>
+                    <constraint firstItem="DAo-36-sx3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="vam-TI-PKe"/>
+                    <constraint firstItem="DAo-36-sx3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="xIz-Z7-BNv"/>
+                    <constraint firstAttribute="trailing" secondItem="lw7-0a-ESb" secondAttribute="trailing" constant="15" id="yPk-St-OjP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLabel" destination="btJ-te-zkB" id="N9H-pb-Tm6"/>
+                <outlet property="noteContentLabel" destination="lw7-0a-ESb" id="Hn0-jF-bcf"/>
+                <outlet property="noteTitleLabel" destination="DAo-36-sx3" id="bwA-b4-2U3"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="51"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LineColor">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Yellow_ECE590">
+            <color red="0.92549019607843142" green="0.89803921568627454" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

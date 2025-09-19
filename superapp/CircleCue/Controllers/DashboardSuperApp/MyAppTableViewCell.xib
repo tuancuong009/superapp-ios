@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyAppTableViewCell" id="KGk-i7-Jjw" customClass="MyAppTableViewCell" customModule="SuperApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Gow-Rc-3nJ">
+                        <rect key="frame" x="20" y="5.6666666666666679" width="240" height="39"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS8-7j-nzt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="18"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Super App">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="MyriadPro-Semibold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKN-i0-f7z">
+                                <rect key="frame" x="0.0" y="20" width="240" height="19"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                <color key="textColor" name="ColorPlaceholder"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mih-A9-sA2">
+                        <rect key="frame" x="260" y="0.0" width="40" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="sgl-x8-6pL"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="btn_more_cc"/>
+                        <connections>
+                            <action selector="doOptions:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kpl-ck-bJH"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mih-A9-sA2" secondAttribute="trailing" constant="20" id="6aE-0T-Bbf"/>
+                    <constraint firstItem="Gow-Rc-3nJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9mz-dn-Sm5"/>
+                    <constraint firstAttribute="bottom" secondItem="mih-A9-sA2" secondAttribute="bottom" id="Bls-dH-C6s"/>
+                    <constraint firstItem="mih-A9-sA2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YVT-nw-EWk"/>
+                    <constraint firstItem="Gow-Rc-3nJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="aXz-12-FIr"/>
+                    <constraint firstItem="mih-A9-sA2" firstAttribute="leading" secondItem="Gow-Rc-3nJ" secondAttribute="trailing" id="uwa-I5-yL8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblLink" destination="VKN-i0-f7z" id="eGI-yg-4pl"/>
+                <outlet property="lblName" destination="WS8-7j-nzt" id="JDg-V4-tyJ"/>
+            </connections>
+            <point key="canvasLocation" x="-11" y="-1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_more_cc" width="18.666666030883789" height="4.6666665077209473"/>
+        <namedColor name="ColorPlaceholder">
+            <color red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

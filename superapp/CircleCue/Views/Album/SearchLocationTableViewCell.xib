@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MyriadPro-SemiBold.otf">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="243" id="KGk-i7-Jjw" customClass="SearchLocationTableViewCell" customModule="CircleCue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIt-hM-ns5">
+                        <rect key="frame" x="20" y="20" width="357" height="20"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d54-Hz-dGc">
+                        <rect key="frame" x="20" y="196.5" width="357" height="0.5"/>
+                        <color key="backgroundColor" name="LineColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.69999999999999996" id="3fQ-cH-4Qd"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVl-2g-FHS">
+                        <rect key="frame" x="20" y="45" width="357" height="16.5"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="d54-Hz-dGc" secondAttribute="bottom" id="1DY-Vr-QAW"/>
+                    <constraint firstItem="d54-Hz-dGc" firstAttribute="trailing" secondItem="QIt-hM-ns5" secondAttribute="trailing" id="44Z-i0-cnQ"/>
+                    <constraint firstAttribute="trailing" secondItem="QIt-hM-ns5" secondAttribute="trailing" constant="20" id="56Z-2G-vcY"/>
+                    <constraint firstItem="QIt-hM-ns5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="5o8-wn-oe1"/>
+                    <constraint firstItem="ZVl-2g-FHS" firstAttribute="top" secondItem="QIt-hM-ns5" secondAttribute="bottom" constant="5" id="gyr-8l-mbX"/>
+                    <constraint firstItem="d54-Hz-dGc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZVl-2g-FHS" secondAttribute="bottom" constant="18" id="jkV-Zx-smB"/>
+                    <constraint firstItem="QIt-hM-ns5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lQl-gM-WIh"/>
+                    <constraint firstItem="d54-Hz-dGc" firstAttribute="leading" secondItem="QIt-hM-ns5" secondAttribute="leading" id="mVj-uz-2Qp"/>
+                    <constraint firstItem="ZVl-2g-FHS" firstAttribute="leading" secondItem="QIt-hM-ns5" secondAttribute="leading" id="mrw-t7-Azv"/>
+                    <constraint firstItem="ZVl-2g-FHS" firstAttribute="trailing" secondItem="QIt-hM-ns5" secondAttribute="trailing" id="vpV-db-OGv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="locationNameLabel" destination="QIt-hM-ns5" id="Vd2-Z7-498"/>
+                <outlet property="subTitleLabel" destination="ZVl-2g-FHS" id="iwn-oh-K3T"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LineColor">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="AddSocialTableViewCell" customModule="CircleCue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ut-MC-cOh">
+                        <rect key="frame" x="20" y="10" width="335" height="40"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="facebook username" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wUy-Wc-5SM" customClass="CustomTextField" customModule="CircleCue" customModuleProvider="target">
+                                <rect key="frame" x="45" y="0.0" width="280" height="40"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.56078431370000004" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_fb" translatesAutoresizingMaskIntoConstraints="NO" id="hOV-ex-VQB" customClass="RoundImageView" customModule="CircleCue" customModuleProvider="target">
+                                <rect key="frame" x="10" y="7.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hOV-ex-VQB" secondAttribute="height" multiplier="1:1" id="htb-jF-cRJ"/>
+                                    <constraint firstAttribute="width" constant="25" id="phu-sx-O7U"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wUy-Wc-5SM" secondAttribute="bottom" id="625-jg-6ft"/>
+                            <constraint firstItem="hOV-ex-VQB" firstAttribute="leading" secondItem="4Ut-MC-cOh" secondAttribute="leading" constant="10" id="96P-15-OGP"/>
+                            <constraint firstItem="wUy-Wc-5SM" firstAttribute="top" secondItem="4Ut-MC-cOh" secondAttribute="top" id="e09-vm-aXh"/>
+                            <constraint firstItem="hOV-ex-VQB" firstAttribute="centerY" secondItem="4Ut-MC-cOh" secondAttribute="centerY" id="jxu-0j-elU"/>
+                            <constraint firstAttribute="trailing" secondItem="wUy-Wc-5SM" secondAttribute="trailing" constant="10" id="pWX-b8-vqR"/>
+                            <constraint firstItem="wUy-Wc-5SM" firstAttribute="leading" secondItem="hOV-ex-VQB" secondAttribute="trailing" constant="10" id="xqx-2c-Stx"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwE-nY-tTf">
+                        <rect key="frame" x="25" y="17.5" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="socialLoginAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MsN-pg-IOw"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://www.facebook.com/" textAlignment="natural" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhw-Mt-bc9">
+                        <rect key="frame" x="202.5" y="58" width="152.5" height="16.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
+                        <color key="textColor" red="0.30980392159999998" green="0.023529411760000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-tC-ZfZ">
+                        <rect key="frame" x="295" y="20" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="dw1-kO-NkV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
+                        <state key="normal" title="  Hide" image="ic_radio_20">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="privateAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kZa-En-9hV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4Ut-MC-cOh" secondAttribute="bottom" constant="10" id="B2M-mN-k9g"/>
+                    <constraint firstItem="4Ut-MC-cOh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="GuF-Fx-wtp"/>
+                    <constraint firstAttribute="trailing" secondItem="4Ut-MC-cOh" secondAttribute="trailing" constant="20" id="LNO-iX-Q16"/>
+                    <constraint firstAttribute="trailing" secondItem="Xx8-tC-ZfZ" secondAttribute="trailing" constant="20" id="Q7q-82-HOS"/>
+                    <constraint firstItem="Xx8-tC-ZfZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jvT-y8-EZP"/>
+                    <constraint firstItem="4Ut-MC-cOh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wKm-hk-ugh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="domainLabel" destination="Fhw-Mt-bc9" id="bCe-SO-061"/>
+                <outlet property="privateButton" destination="Xx8-tC-ZfZ" id="DwI-hR-Jt0"/>
+                <outlet property="socialImageView" destination="hOV-ex-VQB" id="5FM-aq-P8O"/>
+                <outlet property="usernameTextField" destination="wUy-Wc-5SM" id="pak-E0-mEi"/>
+                <outlet property="viewContent" destination="4Ut-MC-cOh" id="dHJ-Ui-XQw"/>
+            </connections>
+            <point key="canvasLocation" x="73.188405797101453" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="app_fb" width="29" height="29"/>
+        <image name="ic_radio_20" width="20" height="20"/>
+    </resources>
+</document>

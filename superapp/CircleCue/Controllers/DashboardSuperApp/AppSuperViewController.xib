@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppSuperViewController" customModule="SuperApp" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNavi" destination="CzS-yG-juA" id="7uc-6c-v52"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiA-hu-WPR">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-yA-Kai">
+                            <rect key="frame" x="20" y="6" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="iqo-BU-vqB"/>
+                                <constraint firstAttribute="width" constant="32" id="qS8-M3-ehd"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="super_menu"/>
+                            <connections>
+                                <action selector="doMenu:" destination="-1" eventType="touchUpInside" id="y2w-d8-GFF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CzS-yG-juA">
+                            <rect key="frame" x="173.66666666666666" y="9.3333333333333268" width="46" height="25.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="CzS-yG-juA" firstAttribute="centerY" secondItem="uiA-hu-WPR" secondAttribute="centerY" id="FLt-dk-64s"/>
+                        <constraint firstAttribute="height" constant="44" id="fJo-32-Yja"/>
+                        <constraint firstItem="nmw-yA-Kai" firstAttribute="leading" secondItem="uiA-hu-WPR" secondAttribute="leading" constant="20" id="kTt-fj-Lwg"/>
+                        <constraint firstItem="CzS-yG-juA" firstAttribute="centerX" secondItem="uiA-hu-WPR" secondAttribute="centerX" id="sIi-d1-Ncv"/>
+                        <constraint firstItem="nmw-yA-Kai" firstAttribute="centerY" secondItem="uiA-hu-WPR" secondAttribute="centerY" id="xQC-0o-GLr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uiA-hu-WPR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Y1-Oq-D1g"/>
+                <constraint firstItem="uiA-hu-WPR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="D68-VC-bHu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uiA-hu-WPR" secondAttribute="trailing" id="hOB-Lj-wx7"/>
+            </constraints>
+            <point key="canvasLocation" x="-86" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="super_menu" width="25" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
