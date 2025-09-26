@@ -235,7 +235,7 @@ struct ProfileView: View {
                             message: Text(isBlock ? "Are you sure you want to unblock this user?" : "Are you sure you want to block this user?"),
                             primaryButton: .default(Text("Yes")) {
                                 if !isBlock{
-                                    let param = ["blockby": Auth.shared.getUserId(), "blocked": self.profileId]
+                                    let param = ["blockby": AuthKaKonex.shared.getUserId(), "blocked": self.profileId]
                                     self.isBlock = true
                                     
                                     blockModel.callAddBlock(param) { success in
@@ -271,7 +271,7 @@ struct ProfileView: View {
     private func getListBlock(){
         blockModel.loadAPI { success in
             for item in blockModel.results{
-                if let blocked = item.object(forKey: "blocked") as? String, blocked == Auth.shared.getUserId(){
+                if let blocked = item.object(forKey: "blocked") as? String, blocked == AuthKaKonex.shared.getUserId(){
                     self.isBlock = true
                     print("self.isBlock--->",self.isBlock)
                     if let id = item.object(forKey: "id") as? String{

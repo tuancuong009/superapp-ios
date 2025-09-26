@@ -18,7 +18,7 @@ class MyProfileModel: ObservableObject {
     //API
     func loadAPI() {
         //apiState = .loading
-        APIKarkonexHelper.shared.myprofile(id: Auth.shared.getUserId()) { success, dict in
+        APIKarkonexHelper.shared.myprofile(id: AuthKaKonex.shared.getUserId()) { success, dict in
             if let dict = dict{
                 self.user = UserModel.init(dict)
                 self.apiState = .success

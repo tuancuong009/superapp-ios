@@ -120,7 +120,7 @@ class SuperAppViewController: BaseViewController {
         APP_DELEGATE.rootApp()
     }
     @IBAction func doKar(_ sender: Any) {
-        if (Auth.shared.getAccessToken() != nil){
+        if (AuthKaKonex.shared.getAccessToken() != nil){
             let contentView = BaseView().environmentObject(appRouter)
             let swiftUIView = UIHostingController(rootView: contentView)
             self.addChild(swiftUIView)
@@ -168,7 +168,7 @@ extension SuperAppViewController: UICollectionViewDataSource, UICollectionViewDe
         cell.lblName.text = menu.action.name
         cell.imgApp.image = UIImage(named: menu.image)
         cell.tapOption = { [] in
-            let alert = UIAlertController(title: APP_NAME, message: nil, preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: APP_NAME, message: nil, preferredStyle: UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet)
             let hidden = UIAlertAction(title: "Hide App", style: .default) { action in
                 SuperAppHelper.shared.addNumber(menu.id)
                 self.menus.remove(at: indexPath.row)
@@ -188,7 +188,7 @@ extension SuperAppViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if UIDevice.current.userInterfaceIdiom == .pad{
-            return CGSizeMake((cltMenus.frame.size.width - 20)/3, (cltMenus.frame.size.height - 20)/3 + 100)
+            return CGSizeMake((UIScreen.main.bounds.size.width - 70)/3, (UIScreen.main.bounds.size.width - 70)/3 + 100)
         }
         else{
             return CGSizeMake((cltMenus.frame.size.width - 10)/2, (cltMenus.frame.size.height - 10)/2)
@@ -222,9 +222,16 @@ extension SuperAppViewController: UICollectionViewDataSource, UICollectionViewDe
 class MenuAppObj: NSObject{
     
     var id: Int = 0
+    var key: String = ""
+    var link: String = ""
     var image: String  = ""
+    var name: String = ""
     var action: MenuSuperAction = .other
     var category: String  = ""
+    var user_id: String = ""
+    var est: String = ""
+    var des: String = ""
+    var images: [String] = []
     init(id: Int, image: String, action: MenuSuperAction, category: String) {
         self.id = id
         self.image = image

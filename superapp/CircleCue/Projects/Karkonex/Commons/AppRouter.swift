@@ -6,7 +6,7 @@ import Foundation
 import SwiftUI
 
 class AppRouter: ObservableObject {
-    @Published var state: AppState = Auth.shared.hasAccessToken() ? .home : .login
+    @Published var state: AppState = AuthKaKonex.shared.hasAccessToken() ? .home : .login
     @Published var stateSideMenu: AppStateSideMenu = .home
 }
 

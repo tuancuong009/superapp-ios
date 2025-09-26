@@ -33,7 +33,7 @@
 //            }
 //            .specialNavBar()
 //            .onAppear {
-//                print("USERID000-->",Auth.shared.hasAccessToken())
+//                print("USERID000-->",AuthKaKonex.shared.hasAccessToken())
 //            }
 //        }
 //    }

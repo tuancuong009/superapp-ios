@@ -16,7 +16,7 @@ class NotificationModel: ObservableObject {
     
     //API
     func loadAPI() {
-        APIKarkonexHelper.shared.getNotifications(Auth.shared.getUserId()) { success, dict in
+        APIKarkonexHelper.shared.getNotifications(AuthKaKonex.shared.getUserId()) { success, dict in
             if let dict = dict{
                 self.messages = dict
                 self.apiState = .success

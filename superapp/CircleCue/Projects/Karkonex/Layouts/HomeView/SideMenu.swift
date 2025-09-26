@@ -75,7 +75,7 @@ struct SideMenu: View {
                             appRouter.stateSideMenu = .partnerApp
                         }
                         else if menuObj.name == "LOGOUT"{
-                            Auth.shared.logout()
+                            AuthKaKonex.shared.logout()
                             appRouter.state = .login
                             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LOGOUTSUCCESS"), object: nil)
                         }

@@ -30,7 +30,7 @@ class APIKarkonexHelper {
                     if let val = response.value as? NSDictionary, let status = val.object(forKey: "status") as? Bool
                     {
                         if status {
-                            Auth.shared.setCredentials(accessToken: "", refreshToken: "", userId: val.object(forKey: "id") as? String ?? "")
+                            AuthKaKonex.shared.setCredentials(accessToken: "", refreshToken: "", userId: val.object(forKey: "id") as? String ?? "")
                             complete(true, nil)
                         }
                         else{
@@ -108,7 +108,7 @@ class APIKarkonexHelper {
                             else if let Data = val.object(forKey: "Data") as? String{
                                 userId = Data
                             }
-                            Auth.shared.setCredentials(accessToken: "", refreshToken: "", userId: userId)
+                            AuthKaKonex.shared.setCredentials(accessToken: "", refreshToken: "", userId: userId)
                             complete(true, nil)
                         }
                         else{
@@ -128,7 +128,7 @@ class APIKarkonexHelper {
                                     userId = Data
                                 }
                             }
-                            Auth.shared.setCredentials(accessToken: "", refreshToken: "", userId: userId)
+                            AuthKaKonex.shared.setCredentials(accessToken: "", refreshToken: "", userId: userId)
                             complete(true, nil)
                         }
                         else{
@@ -138,7 +138,7 @@ class APIKarkonexHelper {
                     else{
                         if let val = response.value as? NSDictionary, let id = val.object(forKey: "id") as? String
                         {
-                            Auth.shared.setCredentials(accessToken: "", refreshToken: "", userId: id)
+                            AuthKaKonex.shared.setCredentials(accessToken: "", refreshToken: "", userId: id)
                             complete(true, nil)
                         }else{
                             complete(false, response.error?.localizedDescription)
@@ -181,7 +181,7 @@ class APIKarkonexHelper {
                         else if let id = val.object(forKey: "message") as? Int{
                             userID = "\(id)"
                         }
-                        Auth.shared.setCredentials(accessToken: "", refreshToken: "", userId: userID)
+                        AuthKaKonex.shared.setCredentials(accessToken: "", refreshToken: "", userId: userID)
                         complete(true,  nil)
                     }
                     else{
@@ -198,7 +198,7 @@ class APIKarkonexHelper {
                         else if let id = val.object(forKey: "message") as? Int{
                             userID = "\(id)"
                         }
-                        Auth.shared.setCredentials(accessToken: "", refreshToken: "", userId: userID)
+                        AuthKaKonex.shared.setCredentials(accessToken: "", refreshToken: "", userId: userID)
                         complete(true,  nil)
                     }
                     else{
@@ -496,7 +496,7 @@ class APIKarkonexHelper {
     
     func getMessageChatByUser(_ id: String, complete:@escaping (_ success: Bool?, _ dict: [NSDictionary]?) ->Void)
     {
-        manager.request(URL.init(string: Config.shared.URL_SERVER + "msglist.php" + "?sid=\(Auth.shared.getUserId())&rid=\(id)")!, method: .get, parameters: nil)
+        manager.request(URL.init(string: Config.shared.URL_SERVER + "msglist.php" + "?sid=\(AuthKaKonex.shared.getUserId())&rid=\(id)")!, method: .get, parameters: nil)
             .responseJSON { response in
                 print(response)
                 switch(response.result) {
@@ -728,7 +728,7 @@ class APIKarkonexHelper {
     
     func myCards(complete:@escaping (_ success: Bool?, _ dict: [NSDictionary]?) ->Void)
     {
-        let param = ["uid":Auth.shared.getUserId()]
+        let param = ["uid":AuthKaKonex.shared.getUserId()]
         print(param)
         manager.request(URL.init(string: Config.shared.URL_SERVER + "view_car.php")!, method: .post, parameters: param)
             .responseJSON { response in
@@ -970,7 +970,7 @@ class APIKarkonexHelper {
     
     func deleteProfile(complete:@escaping (_ success: Bool?, _ erro: String?) ->Void)
     {
-        manager.request(URL.init(string: Config.shared.URL_SERVER + "delete_account.php?id=\(Auth.shared.getUserId())")!, method: .get, parameters: nil)
+        manager.request(URL.init(string: Config.shared.URL_SERVER + "delete_account.php?id=\(AuthKaKonex.shared.getUserId())")!, method: .get, parameters: nil)
             .responseJSON { response in
                 print(response)
                 switch(response.result) {

@@ -11,6 +11,7 @@ class SuperCollectionViewCell: UICollectionViewCell {
     var tapOption:(()->())?
     @IBOutlet weak var imgApp: UIImageView!
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblCategory: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

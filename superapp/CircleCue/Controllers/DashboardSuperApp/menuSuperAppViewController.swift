@@ -7,32 +7,43 @@
 
 import UIKit
 import LGSideMenuController
+import FirebaseAuth
 class menuSuperAppViewController: BaseViewController {
 
     @IBOutlet weak var btnLogout: UIButton!
-    @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var btnSubmitApp: UIButton!
     @IBOutlet weak var btnInvest: UIButton!
+    @IBOutlet weak var btnProfile: UIButton!
+    @IBOutlet weak var btnApps: UIButton!
+    @IBOutlet weak var btnHidden: UIButton!
+    @IBOutlet weak var btnMyApps: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let userID = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
             print(userID)
-            btnSignUp.isHidden = true
             btnLogout.isHidden = false
         }
         else{
-            btnSignUp.isHidden = false
             btnLogout.isHidden = true
         }
         
-        if Auth.shared.hasPremium(){
-            btnSubmitApp.isHidden = false
-            btnInvest.isHidden = false
-        }
-        else{
+       
+        
+        if AppSettings.shared.isUseFirebase{
+            btnProfile.isHidden = false
+            btnApps.isHidden = true
+            btnHidden.isHidden = true
             btnSubmitApp.isHidden = true
             btnInvest.isHidden = true
+            btnMyApps.setTitle("My IDEAs", for: .normal)
+        }
+        else{
+            btnProfile.isHidden = true
+            btnApps.isHidden = false
+            btnHidden.isHidden = false
+            btnSubmitApp.isHidden = false
+            btnInvest.isHidden = false
         }
     }
 
@@ -116,7 +127,7 @@ class menuSuperAppViewController: BaseViewController {
     @IBAction func doHome(_ sender: Any) {
         let mainViewController = sideMenuController!
         if let nav = mainViewController.rootViewController as? UINavigationController{
-            let vc = SuperAppViewController.init()
+            let vc = AppSettings.shared.isUseFirebase ? SuperFirebaseAppViewController.init() : SuperAppViewController.init()
             nav.setViewControllers([vc], animated: false)
             mainViewController.hideLeftView(animated: true) {
             }
@@ -175,11 +186,13 @@ class menuSuperAppViewController: BaseViewController {
         self.showOutsideAppWebContent(urlString: "https://superapp.app/privacy.php")
     }
     @IBAction func doSignUp(_ sender: Any) {
-        let vc = RegisterSuperAppViewController.init()
-        let nav = UINavigationController(rootViewController: vc)
-        nav.isNavigationBarHidden = true
-        nav.modalPresentationStyle = .fullScreen
-        self.present(nav, animated: true)
+        let mainViewController = sideMenuController!
+        if let nav = mainViewController.rootViewController as? UINavigationController{
+            let vc = ProfileFirebaseViewController.init()
+            nav.setViewControllers([vc], animated: false)
+            mainViewController.hideLeftView(animated: true) {
+            }
+        }
     }
     @IBAction func doLogout(_ sender: Any) {
         var style = UIAlertController.Style.actionSheet
@@ -196,7 +209,19 @@ class menuSuperAppViewController: BaseViewController {
         
         let delete = UIAlertAction.init(title: "Yes", style: .default) { action in
             UserDefaults.standard.removeObject(forKey: USER_ID_SUPER_APP)
-            APP_DELEGATE.initSuperApp()
+            if AppSettings.shared.isUseFirebase{
+                do {
+                    try Auth.auth().signOut()
+                    APP_DELEGATE.initLoginSuper()
+                    print("✅ Logout")
+                } catch let error {
+                    print("❌ Fail: \(error.localizedDescription)")
+                }
+            }
+            else{
+                APP_DELEGATE.initLoginSuper()
+            }
+            
         }
         alert.addAction(delete)
         self.present(alert, animated: true, completion: nil)

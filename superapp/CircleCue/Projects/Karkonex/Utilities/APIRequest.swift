@@ -61,7 +61,7 @@ class APIRequest<Parameters: Encodable, Model: Decodable> {
             request.httpBody = try? JSONEncoder().encode(parameters)
         }
     
-        if authorized, let token = Auth.shared.getAccessToken() {
+        if authorized, let token = AuthKaKonex.shared.getAccessToken() {
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
         

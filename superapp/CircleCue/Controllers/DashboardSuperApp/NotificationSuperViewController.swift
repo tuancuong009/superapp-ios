@@ -27,7 +27,7 @@ class NotificationSuperViewController: BaseViewController {
     private func fetchNotificationList() {
         guard let userId = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String else { return }
         showSimpleHUD()
-        ManageAPI.shared.fetchNotificationSuperApp(for: "1") { [weak self] (results, error) in
+        ManageAPI.shared.fetchNotificationSuperApp(for: userId) { [weak self] (results, error) in
             guard let self = self else { return }
             self.hideLoading()
             DispatchQueue.main.async {

@@ -535,7 +535,7 @@ struct BookNowView: View {
         else{
             var param: Parameters = [:]
             param["pid"] = carModel.pid
-            param["uid"] = Auth.shared.getUserId()
+            param["uid"] = AuthKaKonex.shared.getUserId()
             if isRentDay{
                 param["type"] = "day"
             }

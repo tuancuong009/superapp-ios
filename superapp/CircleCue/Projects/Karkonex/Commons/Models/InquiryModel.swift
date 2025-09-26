@@ -15,7 +15,7 @@ class InquiryModel: ObservableObject {
     
     //API
     func loadAPISent(complete:@escaping (_ success: Bool) ->Void){
-        APIKarkonexHelper.shared.getInquirySent(Auth.shared.getUserId()) { success, dict in
+        APIKarkonexHelper.shared.getInquirySent(AuthKaKonex.shared.getUserId()) { success, dict in
            
             if let dict = dict{
                 self.resultSents = dict
@@ -31,7 +31,7 @@ class InquiryModel: ObservableObject {
     
     
     func loadAPIReceivers(complete:@escaping (_ success: Bool) ->Void){
-        APIKarkonexHelper.shared.getInquiryRecieved(Auth.shared.getUserId()) { success, dict in
+        APIKarkonexHelper.shared.getInquiryRecieved(AuthKaKonex.shared.getUserId()) { success, dict in
             if let dict = dict{
               
                 self.resultReceivers = dict

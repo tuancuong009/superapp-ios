@@ -48,7 +48,7 @@ extension HiddenSuperViewController: UICollectionViewDataSource, UICollectionVie
         cell.lblName.text = menu.action.name
         cell.imgApp.image = UIImage(named: menu.image)
         cell.tapOption = { [] in
-            let alert = UIAlertController(title: APP_NAME, message: nil, preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: APP_NAME, message: nil, preferredStyle: UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet)
             let hidden = UIAlertAction(title: "Show App", style: .default) { action in
                 SuperAppHelper.shared.removeNumber(menu.id)
                 self.menus.remove(at: indexPath.row)
@@ -68,7 +68,7 @@ extension HiddenSuperViewController: UICollectionViewDataSource, UICollectionVie
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if UIDevice.current.userInterfaceIdiom == .pad{
-            return CGSizeMake((cltMenus.frame.size.width - 20)/3, (cltMenus.frame.size.height - 20)/3 + 100)
+            return CGSizeMake((UIScreen.main.bounds.size.width - 70)/3, (UIScreen.main.bounds.size.width - 70)/3 + 100)
         }
         else{
             return CGSizeMake((cltMenus.frame.size.width - 10)/2, (cltMenus.frame.size.height - 10)/2)

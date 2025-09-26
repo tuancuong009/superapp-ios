@@ -17,7 +17,7 @@ class BlockModel: ObservableObject {
     //API
     func loadAPI(complete:@escaping (_ success: Bool) ->Void){
         apiState = .loading
-        APIKarkonexHelper.shared.getListBlock(Auth.shared.getUserId()) { success, dict in
+        APIKarkonexHelper.shared.getListBlock(AuthKaKonex.shared.getUserId()) { success, dict in
             if let dict = dict{
                 self.results = dict
                 self.apiState = .success

@@ -1,17 +1,15 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'CircleCue' do
+target 'SuperApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  # Pods for CircleCue
+  # Pods for SuperApp
   
   pod 'GoogleMaps', '7.1.0'
   pod 'NVActivityIndicatorView'
   pod 'VIMediaCache'
-  pod 'Firebase/Messaging'
-  pod 'FirebaseAnalytics'
   pod 'SDWebImagePDFCoder'
   pod 'lottie-ios'
   pod 'ZegoUIKitPrebuiltLiveStreaming'

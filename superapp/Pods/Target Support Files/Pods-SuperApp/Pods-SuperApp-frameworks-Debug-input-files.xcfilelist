@@ -1,0 +1,10 @@
+${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImagePDFCoder/SDWebImagePDFCoder.framework
+${BUILT_PRODUCTS_DIR}/VIMediaCache/VIMediaCache.framework
+${BUILT_PRODUCTS_DIR}/ZegoPluginAdapter/ZegoPluginAdapter.framework
+${BUILT_PRODUCTS_DIR}/ZegoUIKit/ZegoUIKit.framework
+${BUILT_PRODUCTS_DIR}/ZegoUIKitPrebuiltLiveStreaming/ZegoUIKitPrebuiltLiveStreaming.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ZegoExpressEngine/ZegoExpressEngine.framework/ZegoExpressEngine

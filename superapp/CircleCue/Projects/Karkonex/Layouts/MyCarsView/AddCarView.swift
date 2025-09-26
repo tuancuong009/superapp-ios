@@ -557,7 +557,7 @@ struct AddCarView: View {
         else{
             amountIsFocused = false
             isLoading = true
-            let param = ["uid": Auth.shared.getUserId(), "make": addCarModel.make , "modal": addCarModel.model, "year": addCarModel.year, "rent": addCarModel.rentDay, "rentw": addCarModel.rentweek, "rentm": addCarModel.rentMonth, "address": addCarModel.location, "discription": addCarModel.description, "city": addCarModel.city, "zip": addCarModel.zipCode, "state": stateID, "country": countryID, "type": isRent ? "0" : "1"]
+            let param = ["uid": AuthKaKonex.shared.getUserId(), "make": addCarModel.make , "modal": addCarModel.model, "year": addCarModel.year, "rent": addCarModel.rentDay, "rentw": addCarModel.rentweek, "rentm": addCarModel.rentMonth, "address": addCarModel.location, "discription": addCarModel.description, "city": addCarModel.city, "zip": addCarModel.zipCode, "state": stateID, "country": countryID, "type": isRent ? "0" : "1"]
             APIKarkonexHelper.shared.addCar(param, photo1, photo2, photo3, photo4) { success, errer in
                 isLoading = false
                 if success!{

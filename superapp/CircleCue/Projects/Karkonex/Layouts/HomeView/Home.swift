@@ -152,7 +152,7 @@ struct Home: View {
             print("Error fetching FCM registration token: \(error)")
           } else if let token = token {
             print("FCM registration token: \(token)")
-              let param = ["id": Auth.shared.getUserId(), "imei": token]
+              let param = ["id": AuthKaKonex.shared.getUserId(), "imei": token]
               APIKarkonexHelper.shared.updateToken(param) { success, erro in
                   
               }

@@ -359,7 +359,7 @@ struct EditProfileView: View {
             UIApplication.shared.endEditing()
             isLoading = true
             if viewModel.avatar != nil{
-                let param = ["fname": viewModel.firstName, "lname": viewModel.lastName, "username": viewModel.username, "email": viewModel.email, "phone": viewModel.phone, "phone_status": viewModel.isVisiblePhone ? "1" : "0", "status": viewModel.isPrivateOwner ? "1": "0", "id": Auth.shared.getUserId(), "address": viewModel.address, "city": viewModel.city, "zip": viewModel.zipCode] as [String : Any]
+                let param = ["fname": viewModel.firstName, "lname": viewModel.lastName, "username": viewModel.username, "email": viewModel.email, "phone": viewModel.phone, "phone_status": viewModel.isVisiblePhone ? "1" : "0", "status": viewModel.isPrivateOwner ? "1": "0", "id": AuthKaKonex.shared.getUserId(), "address": viewModel.address, "city": viewModel.city, "zip": viewModel.zipCode] as [String : Any]
                 APIKarkonexHelper.shared.editProfileAvatar(param, viewModel.avatar!, complete: { success, errer in
                     isLoading = false
                     if success!{
@@ -380,7 +380,7 @@ struct EditProfileView: View {
                 })
             }
             else{
-                let param = ["fname": viewModel.firstName, "lname": viewModel.lastName, "username": viewModel.username, "email": viewModel.email, "phone": viewModel.phone, "phone_status": viewModel.isVisiblePhone ? "1" : "0", "status": viewModel.isPrivateOwner ? "1": "0", "id": Auth.shared.getUserId(), "address": viewModel.address, "city": viewModel.city, "zip": viewModel.zipCode] as [String : Any]
+                let param = ["fname": viewModel.firstName, "lname": viewModel.lastName, "username": viewModel.username, "email": viewModel.email, "phone": viewModel.phone, "phone_status": viewModel.isVisiblePhone ? "1" : "0", "status": viewModel.isPrivateOwner ? "1": "0", "id": AuthKaKonex.shared.getUserId(), "address": viewModel.address, "city": viewModel.city, "zip": viewModel.zipCode] as [String : Any]
                 APIKarkonexHelper.shared.editProfile(param, complete: { success, erro in
                     isLoading = false
                     if success!{

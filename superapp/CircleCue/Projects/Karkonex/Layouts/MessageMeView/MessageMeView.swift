@@ -49,7 +49,7 @@ struct MessageMeView: View {
                         else{
                             UIApplication.shared.endEditing()
                             isLoading = true
-                            let param = ["sid": Auth.shared.getUserId(), "rid": self.profileId, "message": message]
+                            let param = ["sid": AuthKaKonex.shared.getUserId(), "rid": self.profileId, "message": message]
                             addMessageModel.callApiAddMsg(param) { success in
                                 withAnimation {
                                     isLoading = false

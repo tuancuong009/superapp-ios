@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A562754C977C62C8A9BB37A /* Pods_SuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F073761A882904FFCDE56321 /* Pods_SuperApp.framework */; };
 		476F61A329DBC64C0018E8AB /* CircularMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F61A129DBC64C0018E8AB /* CircularMessageTableViewCell.swift */; };
 		476F61A429DBC64C0018E8AB /* CircularMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476F61A229DBC64C0018E8AB /* CircularMessageTableViewCell.xib */; };
 		47B4324129DADCE10011E59F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 47B4324029DADCE10011E59F /* SnapKit */; };
@@ -176,6 +177,14 @@
 		887318A32B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887318A22B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift */; };
 		887318A52B22FAB700F187A1 /* CircleFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887318A42B22FAB700F187A1 /* CircleFeedTableViewCell.swift */; };
 		887318A72B22FAC000F187A1 /* CircleFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887318A62B22FAC000F187A1 /* CircleFeedTableViewCell.xib */; };
+		887349272E8233510017895E /* ProfileFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887349252E8233510017895E /* ProfileFirebaseViewController.swift */; };
+		887349282E8233510017895E /* ProfileFirebaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887349262E8233510017895E /* ProfileFirebaseViewController.xib */; };
+		8873492E2E82455F0017895E /* MyAppFirebaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8873492D2E82455F0017895E /* MyAppFirebaseTableViewCell.xib */; };
+		887349302E8249010017895E /* FirebaseImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873492F2E8249010017895E /* FirebaseImageHelper.swift */; };
+		887349332E824C1B0017895E /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887349312E824C1B0017895E /* UserCollectionViewCell.swift */; };
+		887349342E824C1B0017895E /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887349322E824C1B0017895E /* UserCollectionViewCell.xib */; };
+		887349372E824FD10017895E /* OtherUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887349352E824FD10017895E /* OtherUserViewController.swift */; };
+		887349382E824FD10017895E /* OtherUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887349362E824FD10017895E /* OtherUserViewController.xib */; };
 		887FA15C2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FA15A2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.swift */; };
 		887FA15D2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887FA15B2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.xib */; };
 		887FA1602D1E426E0011FF84 /* DashboardProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887FA15E2D1E426E0011FF84 /* DashboardProfileTableViewCell.swift */; };
@@ -189,6 +198,21 @@
 		888913122C522C4800A7DB86 /* ShopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888913102C522C4800A7DB86 /* ShopCollectionViewCell.xib */; };
 		88965F972D769F0D00ED3523 /* ic_logo_splash_v6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88965F952D769F0D00ED3523 /* ic_logo_splash_v6@2x.png */; };
 		88965F982D769F0D00ED3523 /* ic_logo_splash_v6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88965F962D769F0D00ED3523 /* ic_logo_splash_v6@3x.png */; };
+		889EC3FE2E810791006A602E /* SplashSuperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889EC3FD2E810791006A602E /* SplashSuperViewController.xib */; };
+		889EC3FF2E810791006A602E /* SplashSuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EC3FC2E810791006A602E /* SplashSuperViewController.swift */; };
+		889EC4132E810E24006A602E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC4122E810E24006A602E /* FirebaseAuth */; };
+		889EC4152E810E24006A602E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC4142E810E24006A602E /* FirebaseDatabase */; };
+		889EC4172E810E24006A602E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC4162E810E24006A602E /* FirebaseRemoteConfig */; };
+		889EC4192E810F38006A602E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC4182E810F38006A602E /* FirebaseAnalytics */; };
+		889EC41B2E810F38006A602E /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC41A2E810F38006A602E /* FirebaseCore */; };
+		889EC41D2E810F38006A602E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC41C2E810F38006A602E /* FirebaseCrashlytics */; };
+		889EC41F2E810F38006A602E /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC41E2E810F38006A602E /* FirebaseInstallations */; };
+		889EC4212E812892006A602E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 889EC4202E812892006A602E /* FirebaseMessaging */; };
+		889EC4242E813683006A602E /* SuperFirebaseAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889EC4232E813683006A602E /* SuperFirebaseAppViewController.xib */; };
+		889EC4252E813683006A602E /* SuperFirebaseAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EC4222E813683006A602E /* SuperFirebaseAppViewController.swift */; };
+		889EC4272E8137EB006A602E /* SuperListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889EC4262E8137EB006A602E /* SuperListCollectionViewCell.xib */; };
+		889EC42A2E8139BC006A602E /* AddNewAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889EC4292E8139BC006A602E /* AddNewAppViewController.xib */; };
+		889EC42B2E8139BC006A602E /* AddNewAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889EC4282E8139BC006A602E /* AddNewAppViewController.swift */; };
 		88A243EE2C60C8470098B7FD /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A243EC2C60C8470098B7FD /* DetailProductViewController.swift */; };
 		88A243EF2C60C8470098B7FD /* DetailProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A243ED2C60C8470098B7FD /* DetailProductViewController.xib */; };
 		88A243F22C60CBC10098B7FD /* PhotoProductCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A243F02C60CBC10098B7FD /* PhotoProductCollect.swift */; };
@@ -216,6 +240,14 @@
 		88A629992D1E699B00B405CE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A629942D1E699B00B405CE /* PageView.swift */; };
 		88A6299A2D1E699B00B405CE /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A629912D1E699B00B405CE /* Animator.swift */; };
 		88A6299B2D1E699B00B405CE /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A629922D1E699B00B405CE /* DismissButton.swift */; };
+		88A9CB2A2E84E844004041CC /* IdeaAppCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A9CB292E84E844004041CC /* IdeaAppCollectionViewCell.xib */; };
+		88A9CB2B2E84E844004041CC /* IdeaAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9CB282E84E844004041CC /* IdeaAppCollectionViewCell.swift */; };
+		88A9CB2E2E84EC20004041CC /* DetailAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A9CB2D2E84EC20004041CC /* DetailAppViewController.xib */; };
+		88A9CB2F2E84EC20004041CC /* DetailAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9CB2C2E84EC20004041CC /* DetailAppViewController.swift */; };
+		88A9CB322E8501E2004041CC /* ChatAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A9CB312E8501E2004041CC /* ChatAppViewController.xib */; };
+		88A9CB332E8501E2004041CC /* ChatAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9CB302E8501E2004041CC /* ChatAppViewController.swift */; };
+		88A9CB362E8503AF004041CC /* ChatAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A9CB352E8503AF004041CC /* ChatAppTableViewCell.xib */; };
+		88A9CB372E8503AF004041CC /* ChatAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9CB342E8503AF004041CC /* ChatAppTableViewCell.swift */; };
 		88CD77262D3110C5000D3F95 /* SugessCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CD77252D3110C5000D3F95 /* SugessCollectionViewCell.xib */; };
 		88CD77272D3110C5000D3F95 /* SugessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD77242D3110C5000D3F95 /* SugessCollectionViewCell.swift */; };
 		88D9A6902D39FF4E008BB04B /* SubscrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9A68E2D39FF4E008BB04B /* SubscrViewController.swift */; };
@@ -714,10 +746,10 @@
 		B7FE3E002685C28800DE0446 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE3DF52685C28800DE0446 /* Errors.swift */; };
 		B7FE3E012685C28800DE0446 /* ValidatorJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE3DF72685C28800DE0446 /* ValidatorJWT.swift */; };
 		B7FE3E022685C28800DE0446 /* A0JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE3DF82685C28800DE0446 /* A0JWT.swift */; };
-		FEA0E51FE50E998CFB6756FF /* Pods_CircleCue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4962C66FAF49AFE783D23F35 /* Pods_CircleCue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07B998131E8F57BFC525CC4A /* Pods-SuperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp.debug.xcconfig"; path = "Target Support Files/Pods-SuperApp/Pods-SuperApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3CDA4550AC1BF51F88BEF861 /* Pods-CircleCue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCue.debug.xcconfig"; path = "Target Support Files/Pods-CircleCue/Pods-CircleCue.debug.xcconfig"; sourceTree = "<group>"; };
 		476F61A129DBC64C0018E8AB /* CircularMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularMessageTableViewCell.swift; sourceTree = "<group>"; };
 		476F61A229DBC64C0018E8AB /* CircularMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircularMessageTableViewCell.xib; sourceTree = "<group>"; };
@@ -743,7 +775,6 @@
 		48D08D6329ECFB890007ADF6 /* CarnivalWheelSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarnivalWheelSlice.swift; sourceTree = "<group>"; };
 		48D0F01129EE56F900419FBF /* RuleSpin2WinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleSpin2WinVC.swift; sourceTree = "<group>"; };
 		48D0F01229EE56F900419FBF /* RuleSpin2WinVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuleSpin2WinVC.xib; sourceTree = "<group>"; };
-		4962C66FAF49AFE783D23F35 /* Pods_CircleCue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		880AC76D2DCDF94500E17FD0 /* RegisterSuperAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuperAppViewController.swift; sourceTree = "<group>"; };
 		880AC76E2DCDF94500E17FD0 /* RegisterSuperAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterSuperAppViewController.xib; sourceTree = "<group>"; };
 		880AC7712DCE04B900E17FD0 /* MyAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppsViewController.swift; sourceTree = "<group>"; };
@@ -885,6 +916,14 @@
 		887318A22B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		887318A42B22FAB700F187A1 /* CircleFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleFeedTableViewCell.swift; sourceTree = "<group>"; };
 		887318A62B22FAC000F187A1 /* CircleFeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleFeedTableViewCell.xib; sourceTree = "<group>"; };
+		887349252E8233510017895E /* ProfileFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFirebaseViewController.swift; sourceTree = "<group>"; };
+		887349262E8233510017895E /* ProfileFirebaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileFirebaseViewController.xib; sourceTree = "<group>"; };
+		8873492D2E82455F0017895E /* MyAppFirebaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAppFirebaseTableViewCell.xib; sourceTree = "<group>"; };
+		8873492F2E8249010017895E /* FirebaseImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageHelper.swift; sourceTree = "<group>"; };
+		887349312E824C1B0017895E /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		887349322E824C1B0017895E /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		887349352E824FD10017895E /* OtherUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserViewController.swift; sourceTree = "<group>"; };
+		887349362E824FD10017895E /* OtherUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherUserViewController.xib; sourceTree = "<group>"; };
 		887FA15A2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		887FA15B2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderProfileDashboardTableViewCell.xib; sourceTree = "<group>"; };
 		887FA15E2D1E426E0011FF84 /* DashboardProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -898,6 +937,13 @@
 		888913102C522C4800A7DB86 /* ShopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCollectionViewCell.xib; sourceTree = "<group>"; };
 		88965F952D769F0D00ED3523 /* ic_logo_splash_v6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_logo_splash_v6@2x.png"; sourceTree = "<group>"; };
 		88965F962D769F0D00ED3523 /* ic_logo_splash_v6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_logo_splash_v6@3x.png"; sourceTree = "<group>"; };
+		889EC3FC2E810791006A602E /* SplashSuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashSuperViewController.swift; sourceTree = "<group>"; };
+		889EC3FD2E810791006A602E /* SplashSuperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashSuperViewController.xib; sourceTree = "<group>"; };
+		889EC4222E813683006A602E /* SuperFirebaseAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperFirebaseAppViewController.swift; sourceTree = "<group>"; };
+		889EC4232E813683006A602E /* SuperFirebaseAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperFirebaseAppViewController.xib; sourceTree = "<group>"; };
+		889EC4262E8137EB006A602E /* SuperListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperListCollectionViewCell.xib; sourceTree = "<group>"; };
+		889EC4282E8139BC006A602E /* AddNewAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAppViewController.swift; sourceTree = "<group>"; };
+		889EC4292E8139BC006A602E /* AddNewAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewAppViewController.xib; sourceTree = "<group>"; };
 		88A243EC2C60C8470098B7FD /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
 		88A243ED2C60C8470098B7FD /* DetailProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailProductViewController.xib; sourceTree = "<group>"; };
 		88A243F02C60CBC10098B7FD /* PhotoProductCollect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProductCollect.swift; sourceTree = "<group>"; };
@@ -925,6 +971,14 @@
 		88A629932D1E699B00B405CE /* ImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerController.swift; sourceTree = "<group>"; };
 		88A629942D1E699B00B405CE /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		88A629952D1E699B00B405CE /* PanDirectionGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanDirectionGestureRecognizer.swift; sourceTree = "<group>"; };
+		88A9CB282E84E844004041CC /* IdeaAppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaAppCollectionViewCell.swift; sourceTree = "<group>"; };
+		88A9CB292E84E844004041CC /* IdeaAppCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaAppCollectionViewCell.xib; sourceTree = "<group>"; };
+		88A9CB2C2E84EC20004041CC /* DetailAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAppViewController.swift; sourceTree = "<group>"; };
+		88A9CB2D2E84EC20004041CC /* DetailAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAppViewController.xib; sourceTree = "<group>"; };
+		88A9CB302E8501E2004041CC /* ChatAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppViewController.swift; sourceTree = "<group>"; };
+		88A9CB312E8501E2004041CC /* ChatAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAppViewController.xib; sourceTree = "<group>"; };
+		88A9CB342E8503AF004041CC /* ChatAppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppTableViewCell.swift; sourceTree = "<group>"; };
+		88A9CB352E8503AF004041CC /* ChatAppTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatAppTableViewCell.xib; sourceTree = "<group>"; };
 		88CD77242D3110C5000D3F95 /* SugessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugessCollectionViewCell.swift; sourceTree = "<group>"; };
 		88CD77252D3110C5000D3F95 /* SugessCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SugessCollectionViewCell.xib; sourceTree = "<group>"; };
 		88D9A68E2D39FF4E008BB04B /* SubscrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscrViewController.swift; sourceTree = "<group>"; };
@@ -1417,7 +1471,9 @@
 		B7FE3DF62685C28800DE0446 /* JWTDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTDecode.h; sourceTree = "<group>"; };
 		B7FE3DF72685C28800DE0446 /* ValidatorJWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorJWT.swift; sourceTree = "<group>"; };
 		B7FE3DF82685C28800DE0446 /* A0JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A0JWT.swift; sourceTree = "<group>"; };
+		BBBEA956CB8039D39774DCD2 /* Pods-SuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperApp.release.xcconfig"; path = "Target Support Files/Pods-SuperApp/Pods-SuperApp.release.xcconfig"; sourceTree = "<group>"; };
 		EEFEFCBDF25CB28DC6498C26 /* Pods-CircleCue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCue.release.xcconfig"; path = "Target Support Files/Pods-CircleCue/Pods-CircleCue.release.xcconfig"; sourceTree = "<group>"; };
+		F073761A882904FFCDE56321 /* Pods_SuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1425,6 +1481,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889EC4212E812892006A602E /* FirebaseMessaging in Frameworks */,
 				880D8C362D87C03F00663AE0 /* SVEVideoUI in Frameworks */,
 				B70BCDFE274DD46500E53340 /* FacebookLogin in Frameworks */,
 				880D8C3C2D87C0E400663AE0 /* SwiftUIPresent in Frameworks */,
@@ -1436,14 +1493,21 @@
 				B72F4CE1266F665400C94B5B /* DTPhotoViewerController in Frameworks */,
 				B72F4CF2266F676D00C94B5B /* Alamofire in Frameworks */,
 				B758154629A744770092317B /* GoogleSignInSwift in Frameworks */,
+				889EC4192E810F38006A602E /* FirebaseAnalytics in Frameworks */,
+				889EC4172E810E24006A602E /* FirebaseRemoteConfig in Frameworks */,
+				889EC4132E810E24006A602E /* FirebaseAuth in Frameworks */,
+				889EC4152E810E24006A602E /* FirebaseDatabase in Frameworks */,
+				889EC41F2E810F38006A602E /* FirebaseInstallations in Frameworks */,
 				B72F4CEA266F66D500C94B5B /* JGProgressHUD in Frameworks */,
 				B72F4CE4266F66B500C94B5B /* Swifter in Frameworks */,
 				880D8C392D87C09100663AE0 /* Kingfisher in Frameworks */,
 				B758154429A744770092317B /* GoogleSignIn in Frameworks */,
 				47B4324129DADCE10011E59F /* SnapKit in Frameworks */,
-				FEA0E51FE50E998CFB6756FF /* Pods_CircleCue.framework in Frameworks */,
 				88DBA2C82D7E94C500039A35 /* LGSideMenuController in Frameworks */,
+				889EC41D2E810F38006A602E /* FirebaseCrashlytics in Frameworks */,
+				889EC41B2E810F38006A602E /* FirebaseCore in Frameworks */,
 				88DBA2CB2D7E951F00039A35 /* RappleProgressHUD in Frameworks */,
+				0A562754C977C62C8A9BB37A /* Pods_SuperApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1455,6 +1519,8 @@
 			children = (
 				3CDA4550AC1BF51F88BEF861 /* Pods-CircleCue.debug.xcconfig */,
 				EEFEFCBDF25CB28DC6498C26 /* Pods-CircleCue.release.xcconfig */,
+				07B998131E8F57BFC525CC4A /* Pods-SuperApp.debug.xcconfig */,
+				BBBEA956CB8039D39774DCD2 /* Pods-SuperApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1884,6 +1950,10 @@
 		8880CCCE2D76999F002F3D30 /* DashboardSuperApp */ = {
 			isa = PBXGroup;
 			children = (
+				8873492D2E82455F0017895E /* MyAppFirebaseTableViewCell.xib */,
+				889EC4262E8137EB006A602E /* SuperListCollectionViewCell.xib */,
+				889EC4222E813683006A602E /* SuperFirebaseAppViewController.swift */,
+				889EC4232E813683006A602E /* SuperFirebaseAppViewController.xib */,
 				881D807D2DDACF87000EE237 /* SendMessageSuperVC.swift */,
 				881D807E2DDACF87000EE237 /* SendMessageSuperVC.xib */,
 				880AC7732DCE056000E17FD0 /* MyAppsViewController.xib */,
@@ -1952,6 +2022,32 @@
 				880C4F992C61CC7800CE5280 /* InquiryReceivedCell.xib */,
 			);
 			path = CCShop;
+			sourceTree = "<group>";
+		};
+		889EC3FB2E81071B006A602E /* AuthsFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				8873492F2E8249010017895E /* FirebaseImageHelper.swift */,
+				889EC3FC2E810791006A602E /* SplashSuperViewController.swift */,
+				889EC3FD2E810791006A602E /* SplashSuperViewController.xib */,
+				889EC4282E8139BC006A602E /* AddNewAppViewController.swift */,
+				889EC4292E8139BC006A602E /* AddNewAppViewController.xib */,
+				887349252E8233510017895E /* ProfileFirebaseViewController.swift */,
+				887349262E8233510017895E /* ProfileFirebaseViewController.xib */,
+				887349312E824C1B0017895E /* UserCollectionViewCell.swift */,
+				887349322E824C1B0017895E /* UserCollectionViewCell.xib */,
+				887349352E824FD10017895E /* OtherUserViewController.swift */,
+				887349362E824FD10017895E /* OtherUserViewController.xib */,
+				88A9CB282E84E844004041CC /* IdeaAppCollectionViewCell.swift */,
+				88A9CB292E84E844004041CC /* IdeaAppCollectionViewCell.xib */,
+				88A9CB2C2E84EC20004041CC /* DetailAppViewController.swift */,
+				88A9CB2D2E84EC20004041CC /* DetailAppViewController.xib */,
+				88A9CB302E8501E2004041CC /* ChatAppViewController.swift */,
+				88A9CB312E8501E2004041CC /* ChatAppViewController.xib */,
+				88A9CB342E8503AF004041CC /* ChatAppTableViewCell.swift */,
+				88A9CB352E8503AF004041CC /* ChatAppTableViewCell.xib */,
+			);
+			path = AuthsFirebase;
 			sourceTree = "<group>";
 		};
 		88A629962D1E699B00B405CE /* ImageViewer */ = {
@@ -2275,7 +2371,7 @@
 			isa = PBXGroup;
 			children = (
 				B766258D254A5B9000478C3B /* CloudKit.framework */,
-				4962C66FAF49AFE783D23F35 /* Pods_CircleCue.framework */,
+				F073761A882904FFCDE56321 /* Pods_SuperApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2431,6 +2527,7 @@
 		AD4E845E25286C4D0025EC9B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				889EC3FB2E81071B006A602E /* AuthsFirebase */,
 				8880CCCE2D76999F002F3D30 /* DashboardSuperApp */,
 				887FA1552D1E3F4C0011FF84 /* DashboardProfileVC */,
 				8889130A2C520F5200A7DB86 /* CCShop */,
@@ -3257,6 +3354,14 @@
 				880D8C352D87C03F00663AE0 /* SVEVideoUI */,
 				880D8C382D87C09100663AE0 /* Kingfisher */,
 				880D8C3B2D87C0E400663AE0 /* SwiftUIPresent */,
+				889EC4122E810E24006A602E /* FirebaseAuth */,
+				889EC4142E810E24006A602E /* FirebaseDatabase */,
+				889EC4162E810E24006A602E /* FirebaseRemoteConfig */,
+				889EC4182E810F38006A602E /* FirebaseAnalytics */,
+				889EC41A2E810F38006A602E /* FirebaseCore */,
+				889EC41C2E810F38006A602E /* FirebaseCrashlytics */,
+				889EC41E2E810F38006A602E /* FirebaseInstallations */,
+				889EC4202E812892006A602E /* FirebaseMessaging */,
 			);
 			productName = CircleCue;
 			productReference = AD4E84342528663F0025EC9B /* SuperApp.app */;
@@ -3302,6 +3407,7 @@
 				880D8C342D87C03F00663AE0 /* XCRemoteSwiftPackageReference "SVEVideoUI" */,
 				880D8C372D87C09100663AE0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				880D8C3A2D87C0E400663AE0 /* XCRemoteSwiftPackageReference "SwiftUIPresent" */,
+				889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = AD4E84352528663F0025EC9B /* Products */;
 			projectDirPath = "";
@@ -3337,6 +3443,7 @@
 				B72D98A025393DE10065FC27 /* CustomLinkTableViewCell.xib in Resources */,
 				B77FF6C9265659BC0057A0E3 /* DetailFeedView.xib in Resources */,
 				48D0F01429EE56FA00419FBF /* RuleSpin2WinVC.xib in Resources */,
+				887349382E824FD10017895E /* OtherUserViewController.xib in Resources */,
 				887FA15D2D1E42340011FF84 /* HeaderProfileDashboardTableViewCell.xib in Resources */,
 				88A243FF2C60D9C30098B7FD /* MyProductViewController.xib in Resources */,
 				B706594F252D77DE00B1739D /* MyriadPro-Regular.ttf in Resources */,
@@ -3366,6 +3473,7 @@
 				B7348630255250DF00261B1C /* SelectAllTableViewCell.xib in Resources */,
 				880AC7782DCE069D00E17FD0 /* LoginSuperAppViewController.xib in Resources */,
 				476F61A429DBC64C0018E8AB /* CircularMessageTableViewCell.xib in Resources */,
+				887349282E8233510017895E /* ProfileFirebaseViewController.xib in Resources */,
 				B70E8F2E252ADD0600569C62 /* HomeSocialTableViewCell.xib in Resources */,
 				88F6A55D2AE0D93D00366A22 /* ProfileInfoUrlTableViewCell.xib in Resources */,
 				8846C34A2C253D4E00B90286 /* LiveStreamListVC.xib in Resources */,
@@ -3420,12 +3528,15 @@
 				88DBA2542D7E90E700039A35 /* Assets.xcassets in Resources */,
 				88DBA2552D7E90E700039A35 /* OnboardingViewController.xib in Resources */,
 				88DBA2562D7E90E700039A35 /* LikedViewController.xib in Resources */,
+				8873492E2E82455F0017895E /* MyAppFirebaseTableViewCell.xib in Resources */,
+				889EC3FE2E810791006A602E /* SplashSuperViewController.xib in Resources */,
 				88DBA2572D7E90E700039A35 /* ProfileCollectionViewCell.xib in Resources */,
 				88DBA2582D7E90E700039A35 /* SendMessageVC.xib in Resources */,
 				88DBA25A2D7E90E700039A35 /* Montserrat-Regular.ttf in Resources */,
 				88DBA25B2D7E90E700039A35 /* ReligionPopUpViewController.xib in Resources */,
 				88DBA25C2D7E90E700039A35 /* RightTableViewCell.xib in Resources */,
 				88DBA25D2D7E90E700039A35 /* MixerViewController.xib in Resources */,
+				88A9CB2A2E84E844004041CC /* IdeaAppCollectionViewCell.xib in Resources */,
 				88DBA25E2D7E90E700039A35 /* ReportViewController.xib in Resources */,
 				88DBA25F2D7E90E700039A35 /* Baloo2-ExtraBold.ttf in Resources */,
 				88DBA2612D7E90E700039A35 /* MessageMatcheronViewController.xib in Resources */,
@@ -3443,6 +3554,7 @@
 				88DD84322D8BF72B007C340D /* OnboardingRRViewController.xib in Resources */,
 				88DD84332D8BF72B007C340D /* MyProfileUserVC.xib in Resources */,
 				88DD84342D8BF72B007C340D /* DetailWantedVC.xib in Resources */,
+				88A9CB362E8503AF004041CC /* ChatAppTableViewCell.xib in Resources */,
 				88DD84352D8BF72B007C340D /* SendMessageRRVC.xib in Resources */,
 				88DD84362D8BF72B007C340D /* AssetRRs.xcassets in Resources */,
 				88DD84382D8BF72B007C340D /* BlogCollectionViewListCell.xib in Resources */,
@@ -3455,6 +3567,7 @@
 				88DD84442D8BF72B007C340D /* BlogCollectionViewCell.xib in Resources */,
 				88DD84452D8BF72B007C340D /* states_titlecase.json in Resources */,
 				88DD84482D8BF72B007C340D /* rentalCollectionViewCell.xib in Resources */,
+				889EC4242E813683006A602E /* SuperFirebaseAppViewController.xib in Resources */,
 				88DD84492D8BF72B007C340D /* NotificationRRViewController.xib in Resources */,
 				88DD844A2D8BF72B007C340D /* splashNew2.png in Resources */,
 				88DD844D2D8BF72B007C340D /* WantedCollect.xib in Resources */,
@@ -3465,6 +3578,7 @@
 				88DD84582D8BF72B007C340D /* LeftTableViewRRCell.xib in Resources */,
 				88E6C9A82D93EBA700C27085 /* HiddenSuperViewController.xib in Resources */,
 				88DBA26C2D7E90E700039A35 /* PickerViewController.xib in Resources */,
+				889EC42A2E8139BC006A602E /* AddNewAppViewController.xib in Resources */,
 				88DBA26D2D7E90E700039A35 /* OrginCountryViewController.xib in Resources */,
 				88DBA26E2D7E90E700039A35 /* Montserrat-Light.ttf in Resources */,
 				88DBA26F2D7E90E700039A35 /* MyProfileMatcheronViewController.xib in Resources */,
@@ -3473,8 +3587,10 @@
 				88DBA2712D7E90E700039A35 /* HelpMatcheronViewController.xib in Resources */,
 				88DBA2722D7E90E700039A35 /* RightImageTableViewCell.xib in Resources */,
 				88DBA2732D7E90E700039A35 /* textWelcome2@3x.png in Resources */,
+				887349342E824C1B0017895E /* UserCollectionViewCell.xib in Resources */,
 				88DBA2742D7E90E700039A35 /* Montserrat-Bold.ttf in Resources */,
 				88DBA2752D7E90E700039A35 /* Baloo2-Regular.ttf in Resources */,
+				88A9CB2E2E84EC20004041CC /* DetailAppViewController.xib in Resources */,
 				88E6C9982D93D9FE00C27085 /* AppSuperViewController.xib in Resources */,
 				88DBA2762D7E90E700039A35 /* LeftImageTableViewCell.xib in Resources */,
 				88DBA2772D7E90E700039A35 /* ProfileUserViewController.xib in Resources */,
@@ -3530,11 +3646,13 @@
 				B723652D2536DFEE009E7835 /* ImageMessageTableViewCell.xib in Resources */,
 				B706595F252D7B1B00B1739D /* MyriadPro-SemiBoldItalic.otf in Resources */,
 				88A243F72C60D0300098B7FD /* BuyNowViewController.xib in Resources */,
+				88A9CB322E8501E2004041CC /* ChatAppViewController.xib in Resources */,
 				B74608D62535953E00BB6A8F /* ProfileSocialCollectionViewCell.xib in Resources */,
 				B7F990EB2553B26F00679B8C /* Text_ImageMessageTableViewCell.xib in Resources */,
 				B75402E125B7C3C0003EEA81 /* SearchReviewTableViewCell.xib in Resources */,
 				B798FD82255B995400524EDF /* DropDownCell.xib in Resources */,
 				8880CCD12D7699B7002F3D30 /* SuperAppViewController.xib in Resources */,
+				889EC4272E8137EB006A602E /* SuperListCollectionViewCell.xib in Resources */,
 				ADE866432531E29000E7F4A8 /* SearchTableViewCell.xib in Resources */,
 				AD6A10732529A45100D3CFF6 /* WebsiteTableViewCell.xib in Resources */,
 				B74ADCFE252D55FB0078F0C5 /* TopbarView.xib in Resources */,
@@ -3561,7 +3679,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CircleCue-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SuperApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3574,15 +3692,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CircleCue/Pods-CircleCue-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CircleCue/Pods-CircleCue-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CircleCue/Pods-CircleCue-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A533EBA5D14D9B090F3AE298 /* [CP] Embed Pods Frameworks */ = {
@@ -3591,15 +3709,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CircleCue/Pods-CircleCue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CircleCue/Pods-CircleCue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CircleCue/Pods-CircleCue-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuperApp/Pods-SuperApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3624,12 +3742,15 @@
 				881C281D2DD4741900DD5206 /* ForgotSuperViewController.swift in Sources */,
 				B7D4427526AAAD2300BAC4F2 /* TravelCircleViewController.swift in Sources */,
 				B7A69D3928163E71003B9725 /* SearchEventsViewController.swift in Sources */,
+				887349372E824FD10017895E /* OtherUserViewController.swift in Sources */,
 				B72D98C32539A7180065FC27 /* AppConfigs.swift in Sources */,
 				880C4F9B2C61CC7800CE5280 /* InquiryReceivedCell.swift in Sources */,
+				88A9CB332E8501E2004041CC /* ChatAppViewController.swift in Sources */,
 				AD4E849925286D0C0025EC9B /* UITextFieldExtensions.swift in Sources */,
 				B752A2E725A2CEF5004C2E08 /* ProfileButton.swift in Sources */,
 				B7E4AF98254C158700C28A82 /* ManageAPI.swift in Sources */,
 				B74608D52535953E00BB6A8F /* ProfileSocialCollectionViewCell.swift in Sources */,
+				887349332E824C1B0017895E /* UserCollectionViewCell.swift in Sources */,
 				883A6C0A2C5C9B54009686C6 /* CrowdFundingViewController.swift in Sources */,
 				B72D98BB253995B10065FC27 /* DateExtensions.swift in Sources */,
 				AD3C6DC42528AF290057FA64 /* UIViewExtesion+Helpers.swift in Sources */,
@@ -3827,6 +3948,7 @@
 				B738F50526131EA000BF67E9 /* SearchLocationTableViewCell.swift in Sources */,
 				B77666DC25346C3C00ADCF13 /* UIImageViewExtensions.swift in Sources */,
 				B714110D25A8423E00B44842 /* Toast.swift in Sources */,
+				887349302E8249010017895E /* FirebaseImageHelper.swift in Sources */,
 				B734863325528A7700261B1C /* CircleUser.swift in Sources */,
 				B70590522542E43B0096D70D /* OldFeedbackViewController.swift in Sources */,
 				B7088C27259C75A60082EFF7 /* SignInWithTwitter.swift in Sources */,
@@ -3865,6 +3987,7 @@
 				ADC96E04252DEF0C000E7AEE /* CustomTextField.swift in Sources */,
 				AD4E849525286D0C0025EC9B /* UIViewControllerExtensions.swift in Sources */,
 				B7CF6D86253D44DC0050B7E0 /* IntExtensions.swift in Sources */,
+				88A9CB2B2E84E844004041CC /* IdeaAppCollectionViewCell.swift in Sources */,
 				887318A32B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift in Sources */,
 				B7928BAC29B86AC200E24DEF /* ActiveBuilder.swift in Sources */,
 				AD6A10792529E3C800D3CFF6 /* StringExtension+Helpers.swift in Sources */,
@@ -3880,6 +4003,7 @@
 				88DD84642D8BF72B007C340D /* LeftTableViewRRCell.swift in Sources */,
 				88DD84652D8BF72B007C340D /* BlogCollectionViewCell.swift in Sources */,
 				88DD84662D8BF72B007C340D /* ForgotPasswordRRVC.swift in Sources */,
+				889EC4252E813683006A602E /* SuperFirebaseAppViewController.swift in Sources */,
 				88DD84682D8BF72B007C340D /* WantedCollect.swift in Sources */,
 				88DD84692D8BF72B007C340D /* BuyInquiryViewController.swift in Sources */,
 				88DD846B2D8BF72B007C340D /* BookViewController.swift in Sources */,
@@ -3904,6 +4028,7 @@
 				88DD84822D8BF72B007C340D /* InquiryViewController.swift in Sources */,
 				88DD84832D8BF72B007C340D /* HomeRRViewController.swift in Sources */,
 				88DD84842D8BF72B007C340D /* ListViewController.swift in Sources */,
+				88A9CB372E8503AF004041CC /* ChatAppTableViewCell.swift in Sources */,
 				88DD84852D8BF72B007C340D /* rentalCollectionViewCell.swift in Sources */,
 				88DD84862D8BF72B007C340D /* HomeShowCaseViewController.swift in Sources */,
 				88DD84872D8BF72B007C340D /* MyWantedCell.swift in Sources */,
@@ -3965,6 +4090,7 @@
 				B72F4CD7266F62EC00C94B5B /* BMPlayer.swift in Sources */,
 				B7E4AF9E254C1A6400C28A82 /* ManageError.swift in Sources */,
 				B7D4427326AAAD0100BAC4F2 /* DineoutCircleViewController.swift in Sources */,
+				889EC3FF2E810791006A602E /* SplashSuperViewController.swift in Sources */,
 				B798FD83255B995400524EDF /* DPDKeyboardListener.swift in Sources */,
 				88EDF8C52DB21311005F74C1 /* CategoryAppTableViewCell.swift in Sources */,
 				B7F4898D253ED98B0091F57D /* ForwardMessageViewController.swift in Sources */,
@@ -3974,6 +4100,7 @@
 				ADFF38D125432B5500204CB7 /* BusinessFeedbackViewController.swift in Sources */,
 				B78DB88D25A6A964007D2E04 /* PhotoComment.swift in Sources */,
 				B798FD89255B995400524EDF /* DropDown+Appearance.swift in Sources */,
+				889EC42B2E8139BC006A602E /* AddNewAppViewController.swift in Sources */,
 				B775F02629A7604F0063BF56 /* DividerView.swift in Sources */,
 				B7FE3DFA2685C28800DE0446 /* KeychainWrapperSubscript.swift in Sources */,
 				B798FD69255B81FF00524EDF /* CustomPhotoViewerController.swift in Sources */,
@@ -4019,8 +4146,10 @@
 				B753F9DF260D8D52009DBB7B /* NewFeedTableViewCell.swift in Sources */,
 				ADDBEDB32797F24200A4B042 /* CardInfomationViewController.swift in Sources */,
 				B7065969252DA28C00B1739D /* EditProfileViewController.swift in Sources */,
+				88A9CB2F2E84EC20004041CC /* DetailAppViewController.swift in Sources */,
 				ADFF38CB254310ED00204CB7 /* CosmosDistrib.swift in Sources */,
 				AD4E846125286C890025EC9B /* AppSettings.swift in Sources */,
+				887349272E8233510017895E /* ProfileFirebaseViewController.swift in Sources */,
 				B7928BA929B86AC200E24DEF /* ActiveLabel.swift in Sources */,
 				B72F4CD4266F62EC00C94B5B /* BMTimeSlider.swift in Sources */,
 				B77128B225C0184F00E0AADA /* ImageJobOfferTableViewCell.swift in Sources */,
@@ -4226,14 +4355,14 @@
 		};
 		AD4E8449252866400025EC9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CDA4550AC1BF51F88BEF861 /* Pods-CircleCue.debug.xcconfig */;
+			baseConfigurationReference = 07B998131E8F57BFC525CC4A /* Pods-SuperApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CircleCue/CircleCue.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 17;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = SND2XFR4KM;
 				ENABLE_BITCODE = NO;
@@ -4260,14 +4389,14 @@
 		};
 		AD4E844A252866400025EC9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEFEFCBDF25CB28DC6498C26 /* Pods-CircleCue.release.xcconfig */;
+			baseConfigurationReference = BBBEA956CB8039D39774DCD2 /* Pods-SuperApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CircleCue/CircleCue.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 17;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = SND2XFR4KM;
 				ENABLE_BITCODE = NO;
@@ -4361,6 +4490,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.4.0;
+			};
+		};
+		889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
 			};
 		};
 		88DBA2C32D7E947400039A35 /* XCRemoteSwiftPackageReference "ImageViewer.swift" */ = {
@@ -4475,6 +4612,46 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 880D8C3A2D87C0E400663AE0 /* XCRemoteSwiftPackageReference "SwiftUIPresent" */;
 			productName = SwiftUIPresent;
+		};
+		889EC4122E810E24006A602E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		889EC4142E810E24006A602E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		889EC4162E810E24006A602E /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		889EC4182E810F38006A602E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		889EC41A2E810F38006A602E /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		889EC41C2E810F38006A602E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		889EC41E2E810F38006A602E /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		889EC4202E812892006A602E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 889EC4112E810E24006A602E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 		88DBA2C42D7E947400039A35 /* ImageViewer_swift */ = {
 			isa = XCSwiftPackageProductDependency;

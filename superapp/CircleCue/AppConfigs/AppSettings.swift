@@ -16,7 +16,7 @@ class AppSettings {
     var userLogin: UserLogin?
     var currentUser: UserInfomation?
     var discoverUser: UniversalUser?
-    
+    var isUseFirebase: Bool = false
     var menuItems: [MenuItem] {
         guard let user = currentUser else { return [.settings]}
         switch user.accountType {

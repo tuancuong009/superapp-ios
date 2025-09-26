@@ -295,7 +295,7 @@ struct DetailView: View {
                                Text(viewCarModel.carObj.address)
                                    .font(.custom(FONT_NAME.FUTURA_REGULAR, size: 18.0)).multilineTextAlignment(.leading)
                                    .foregroundColor(.black)
-                               if Auth.shared.hasPremium(){
+                               if AuthKaKonex.shared.hasPremium(){
                                    NavigationLink(destination: BookNowView(carModel: self.viewCarModel.carObj)) {
                                        Text("Book Now")
                                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))

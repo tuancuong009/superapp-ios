@@ -42,3 +42,8 @@ class Constants {
 
 
 let DATE_HIDDEN_PAYWALL = "2025-09-24"
+struct FIREBASE_TABLE{
+    static let USERS = "users"
+    static let APPS = "apps"
+    static let APP_MESSAGES = "app_messages"
+}

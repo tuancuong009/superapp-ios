@@ -16,7 +16,7 @@ class MessageModel: ObservableObject {
     
     //API
     func loadAPI() {
-        APIKarkonexHelper.shared.getMessages(Auth.shared.getUserId()) { success, dict in
+        APIKarkonexHelper.shared.getMessages(AuthKaKonex.shared.getUserId()) { success, dict in
             if let dict = dict{
                 self.messages = dict
                 self.apiState = .success

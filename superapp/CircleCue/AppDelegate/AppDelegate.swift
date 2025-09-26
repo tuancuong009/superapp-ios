@@ -50,15 +50,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let PDFCoder = SDImagePDFCoder.shared
         SDImageCodersManager.shared.addCoder(PDFCoder)
         setRoot()
-        if AppSettings.shared.showPurchaseView {
-            setupLocation()
-        }
+//        if AppSettings.shared.showPurchaseView {
+//            setupLocation()
+//        }
         Messaging.messaging().delegate = self
         return true
     }
     
     func initSuperApp(){
-        let homeVC = SuperAppViewController.init()
+        let homeVC = AppSettings.shared.isUseFirebase ? SuperFirebaseAppViewController.init() :  SuperAppViewController.init()
         let nav = UINavigationController.init(rootViewController: homeVC)
         nav.isNavigationBarHidden = true
         let leftViewController = menuSuperAppViewController()
@@ -84,6 +84,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.makeKeyAndVisible()
         UIView.transition(with: self.window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
     }
+    func initFlashSuper(){
+        let loginVC = SplashSuperViewController.init()
+        let nav = UINavigationController.init(rootViewController: loginVC)
+        nav.isNavigationBarHidden = true
+        self.window!.rootViewController = nav
+        self.window!.makeKeyAndVisible()
+        UIView.transition(with: self.window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+    
+    func initLoginSuper(){
+        let loginVC = LoginSuperAppViewController.init()
+        let nav = UINavigationController.init(rootViewController: loginVC)
+        nav.isNavigationBarHidden = true
+        self.window!.rootViewController = nav
+        self.window!.makeKeyAndVisible()
+        UIView.transition(with: self.window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+    }
+    
     
     func initLogin(){
         let loginVC = OnboardingViewController.init()
@@ -130,7 +148,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIView.transition(with: self.window!, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
     }
     func setRoot(){
-        initSuperApp()
+        initFlashSuper()
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
@@ -156,7 +174,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.disabledDistanceHandlingClasses.append(ZegoUIKitPrebuiltLiveStreamingVC.self)
     }
     
-    private func setupLocation() {
+    public func setupLocation() {
         guard CLLocationManager.locationServicesEnabled() else { return }
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest

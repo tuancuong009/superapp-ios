@@ -8,9 +8,9 @@
 import Foundation
 import SwiftKeychainWrapper
 
-class Auth: ObservableObject {
+class AuthKaKonex: ObservableObject {
     
-    static let shared: Auth = Auth()
+    static let shared: AuthKaKonex = AuthKaKonex()
     private let keychain: KeychainWrapper = KeychainWrapper.standard
     
     @Published var loggedIn: Bool = false

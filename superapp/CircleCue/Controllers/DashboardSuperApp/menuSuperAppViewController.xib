@@ -18,9 +18,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="menuSuperAppViewController" customModule="SuperApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnApps" destination="1e2-pG-Pzu" id="aY8-31-zH7"/>
+                <outlet property="btnHidden" destination="KVC-Ow-Rt2" id="hnR-hR-we3"/>
                 <outlet property="btnInvest" destination="C4s-kQ-Vr6" id="ULq-Vu-2zZ"/>
                 <outlet property="btnLogout" destination="8o0-gN-6TH" id="ye1-vE-3CS"/>
-                <outlet property="btnSignUp" destination="QL4-4i-gRf" id="cK5-Ey-XaV"/>
+                <outlet property="btnMyApps" destination="NzM-vq-hlj" id="VqN-GX-cbl"/>
+                <outlet property="btnProfile" destination="QL4-4i-gRf" id="0G0-AL-sv3"/>
                 <outlet property="btnSubmitApp" destination="jdA-3k-Nh2" id="vbW-sh-Nh1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -89,8 +92,29 @@ ALL RIGHTS RESERVED</string>
                                                 <action selector="doHome:" destination="-1" eventType="touchUpInside" id="9JN-6P-BRR"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-pG-Pzu">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL4-4i-gRf">
                                             <rect key="frame" x="0.0" y="62" width="353" height="46"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="6kG-3a-9cq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                            <inset key="titleEdgeInsets" minX="26" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Profile" image="menu_profile">
+                                                <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="doSignUp:" destination="-1" eventType="touchUpInside" id="Rg2-PI-24f"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-pG-Pzu">
+                                            <rect key="frame" x="0.0" y="114" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="Ghy-Qb-tPQ"/>
@@ -111,7 +135,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-lM-1do">
-                                            <rect key="frame" x="0.0" y="114" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="165.99999999999997" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="128-hW-5MZ"/>
@@ -129,27 +153,6 @@ ALL RIGHTS RESERVED</string>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="doCategory:" destination="-1" eventType="touchUpInside" id="MoW-Ta-EIs"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL4-4i-gRf">
-                                            <rect key="frame" x="0.0" y="165.99999999999997" width="353" height="46"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="46" id="6kG-3a-9cq"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                            <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Signup" image="super_login">
-                                                <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
-                                                    <real key="value" value="8"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <action selector="doSignUp:" destination="-1" eventType="touchUpInside" id="Rg2-PI-24f"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzM-vq-hlj">
@@ -422,13 +425,13 @@ ALL RIGHTS RESERVED</string>
         </view>
     </objects>
     <resources>
+        <image name="menu_profile" width="30" height="30"/>
         <image name="super_app" width="24" height="24"/>
         <image name="super_cate" width="24" height="24"/>
         <image name="super_contact" width="24" height="24"/>
         <image name="super_hidden" width="24" height="24"/>
         <image name="super_home" width="24" height="24"/>
         <image name="super_invest" width="24" height="24"/>
-        <image name="super_login" width="24" height="24"/>
         <image name="super_logo" width="194" height="35.333332061767578"/>
         <image name="super_logout" width="24" height="24"/>
         <image name="super_message" width="24" height="24"/>

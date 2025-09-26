@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import FirebaseCore
 class ForgotSuperViewController: BaseVC {
 
     @IBOutlet weak var txfEmail: CustomTextField!
@@ -39,17 +40,36 @@ class ForgotSuperViewController: BaseVC {
         }
         self.view.endEditing(true)
         self.showBusy()
-        ManageAPI.shared.forgotpasswordSuper(email) { error in
-            self.hideBusy()
-            if let error = error{
-                self.txfEmail.text = nil
-                self.showAlertMessage(message: error)
+        if AppSettings.shared.isUseFirebase{
+            resetPassword(email: email)
+        }
+        else{
+            ManageAPI.shared.forgotpasswordSuper(email) { error in
+                self.hideBusy()
+                if let error = error{
+                    self.txfEmail.text = nil
+                    self.showAlertMessage(message: error)
+                }
             }
         }
+       
         
     }
     
     @IBAction func doBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func resetPassword(email: String) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            DispatchQueue.main.async {
+                self.hideBusy()
+                if let error = error {
+                    self.showAlert(title: "Error", message: error.localizedDescription)
+                } else {
+                    self.showAlert(title: "Success", message: "A password reset email has been sent to \(email).")
+                }
+            }
+        }
     }
 }

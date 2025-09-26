@@ -22,6 +22,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAppsViewController" customModule="SuperApp" customModuleProvider="target">
             <connections>
                 <outlet property="btnType" destination="pwT-j3-naU" id="ueZ-Pw-hcV"/>
+                <outlet property="lblNavi" destination="0jl-m3-FT8" id="5FD-xU-RPc"/>
                 <outlet property="lblTypeSearch" destination="OR5-jf-oyO" id="hmI-Mo-6Bm"/>
                 <outlet property="tblApps" destination="ARP-eE-YVQ" id="kPY-sO-eRo"/>
                 <outlet property="txfSearch" destination="aFe-ru-qJm" id="PjP-fz-SLm"/>
