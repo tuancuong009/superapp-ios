@@ -8,17 +8,22 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import LGSideMenuController
 class LoginSuperAppViewController: BaseVC {
 
     @IBOutlet weak var txfEmail: CustomTextField!
     @IBOutlet weak var txfPassword: CustomTextField!
+    @IBOutlet weak var btnMenu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btnMenu.isHidden = AppSettings.shared.isUseFirebase
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func doMenu(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

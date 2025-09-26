@@ -29,6 +29,8 @@ class RegisterSuperAppViewController: BaseViewController {
             viewConfirmPassword.isHidden = true
             viewPhone.isHidden = false
         }
+        
+        txfName.placeholder = AppSettings.shared.isUseFirebase ? "Name" : "Username"
         // Do any additional setup after loading the view.
     }
     
@@ -70,7 +72,7 @@ class RegisterSuperAppViewController: BaseViewController {
         let password = txfPassword.text!
         let phone = txfPhone.text!.trimmed
         if name.isEmpty{
-            self.showAlert(title: APP_NAME, message: "Full Name is required")
+            self.showAlert(title: APP_NAME, message: AppSettings.shared.isUseFirebase ? "Name is required" : "Username is required")
             return
         }
         if email.isEmpty{

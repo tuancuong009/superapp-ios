@@ -191,7 +191,7 @@ extension SuperAppViewController: UICollectionViewDataSource, UICollectionViewDe
             return CGSizeMake((UIScreen.main.bounds.size.width - 70)/3, (UIScreen.main.bounds.size.width - 70)/3 + 100)
         }
         else{
-            return CGSizeMake((cltMenus.frame.size.width - 10)/2, (cltMenus.frame.size.height - 10)/2)
+            return CGSizeMake((cltMenus.frame.size.width - 10)/2.2, (cltMenus.frame.size.height - 10)/2.2)
         }
        
     }

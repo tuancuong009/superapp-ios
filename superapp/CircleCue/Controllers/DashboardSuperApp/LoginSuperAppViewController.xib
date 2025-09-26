@@ -23,6 +23,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSuperAppViewController" customModule="SuperApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnMenu" destination="O3M-sk-wo1" id="6Lf-Ap-ceG"/>
                 <outlet property="txfEmail" destination="gXd-Xg-UlP" id="s4u-Yv-QWt"/>
                 <outlet property="txfPassword" destination="19e-UK-Rfo" id="Cga-6B-g6y"/>
                 <outlet property="view" destination="1e8-Ln-UUZ" id="EfP-j3-0R0"/>
@@ -36,6 +37,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTc-8d-Grg">
                     <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3M-sk-wo1">
+                            <rect key="frame" x="20" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="zz9-Tx-9Rq"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="btn_close"/>
+                            <connections>
+                                <action selector="doMenu:" destination="-1" eventType="touchUpInside" id="GVi-7o-F1C"/>
+                            </connections>
+                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LOGIN YOUR ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOd-Qz-Itd">
                             <rect key="frame" x="20" y="10" width="353" height="24"/>
                             <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="24"/>
@@ -47,7 +59,10 @@
                     <constraints>
                         <constraint firstItem="oOd-Qz-Itd" firstAttribute="centerX" secondItem="qTc-8d-Grg" secondAttribute="centerX" id="Lr9-ny-qm7"/>
                         <constraint firstAttribute="height" constant="44" id="Mq6-lb-0l1"/>
+                        <constraint firstItem="O3M-sk-wo1" firstAttribute="leading" secondItem="qTc-8d-Grg" secondAttribute="leading" constant="20" id="YY2-nJ-Oel"/>
+                        <constraint firstAttribute="bottom" secondItem="O3M-sk-wo1" secondAttribute="bottom" id="YnU-Gb-wtH"/>
                         <constraint firstItem="oOd-Qz-Itd" firstAttribute="centerY" secondItem="qTc-8d-Grg" secondAttribute="centerY" id="cQY-3X-ANK"/>
+                        <constraint firstItem="O3M-sk-wo1" firstAttribute="top" secondItem="qTc-8d-Grg" secondAttribute="top" id="kNq-0C-tGc"/>
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqZ-id-4Nd">
@@ -349,6 +364,7 @@
         </view>
     </objects>
     <resources>
+        <image name="btn_close" width="20" height="20"/>
         <image name="eye_closed" width="23.333333969116211" height="23.333333969116211"/>
         <image name="eye_opened" width="23.333333969116211" height="23.333333969116211"/>
         <image name="super_logo" width="194" height="35.333332061767578"/>

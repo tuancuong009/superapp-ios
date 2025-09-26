@@ -21,6 +21,7 @@
                 <outlet property="btnApps" destination="1e2-pG-Pzu" id="aY8-31-zH7"/>
                 <outlet property="btnHidden" destination="KVC-Ow-Rt2" id="hnR-hR-we3"/>
                 <outlet property="btnInvest" destination="C4s-kQ-Vr6" id="ULq-Vu-2zZ"/>
+                <outlet property="btnLogin" destination="Mi6-19-weY" id="KcI-eP-2Hr"/>
                 <outlet property="btnLogout" destination="8o0-gN-6TH" id="ye1-vE-3CS"/>
                 <outlet property="btnMyApps" destination="NzM-vq-hlj" id="VqN-GX-cbl"/>
                 <outlet property="btnProfile" destination="QL4-4i-gRf" id="0G0-AL-sv3"/>
@@ -61,10 +62,10 @@ ALL RIGHTS RESERVED</string>
                     <rect key="frame" x="0.0" y="114.33333333333331" width="393" height="613"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjr-w5-OOf">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="824"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="876"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="A9V-Hm-07P">
-                                    <rect key="frame" x="20" y="20" width="353" height="784"/>
+                                    <rect key="frame" x="20" y="20" width="353" height="836"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obD-Xs-bzP">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="56"/>
@@ -113,8 +114,29 @@ ALL RIGHTS RESERVED</string>
                                                 <action selector="doSignUp:" destination="-1" eventType="touchUpInside" id="Rg2-PI-24f"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-pG-Pzu">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mi6-19-weY" userLabel="Login">
                                             <rect key="frame" x="0.0" y="114" width="353" height="46"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="HHV-IP-kLY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                            <inset key="titleEdgeInsets" minX="26" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Login" image="menu_profile">
+                                                <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="doLogin:" destination="-1" eventType="touchUpInside" id="OLP-KV-dgq"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e2-pG-Pzu">
+                                            <rect key="frame" x="0.0" y="165.99999999999997" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="Ghy-Qb-tPQ"/>
@@ -135,7 +157,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptm-lM-1do">
-                                            <rect key="frame" x="0.0" y="165.99999999999997" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="217.99999999999997" width="353" height="46.000000000000028"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="128-hW-5MZ"/>
@@ -156,7 +178,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzM-vq-hlj">
-                                            <rect key="frame" x="0.0" y="217.99999999999997" width="353" height="46.000000000000028"/>
+                                            <rect key="frame" x="0.0" y="270" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="KZf-U0-uqY"/>
@@ -177,7 +199,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUV-8e-Beb">
-                                            <rect key="frame" x="0.0" y="270" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="322" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="BUS-ce-y7s"/>
@@ -198,7 +220,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-3k-Nh2">
-                                            <rect key="frame" x="0.0" y="322" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="374" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="Zzk-o0-qse"/>
@@ -219,7 +241,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4s-kQ-Vr6">
-                                            <rect key="frame" x="0.0" y="374" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="426" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="BjE-Wd-Bwv"/>
@@ -240,7 +262,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-Ow-Rt2">
-                                            <rect key="frame" x="0.0" y="426" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="478" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="Gz4-KD-15X"/>
@@ -261,7 +283,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlP-5M-UFA">
-                                            <rect key="frame" x="0.0" y="478" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="530" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="V0j-iK-3cq"/>
@@ -282,7 +304,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-uT-aag">
-                                            <rect key="frame" x="0.0" y="530" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="582" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="yau-lx-4l9"/>
@@ -303,7 +325,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwT-JC-veq">
-                                            <rect key="frame" x="0.0" y="582" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="634" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="6tQ-i2-GMF"/>
@@ -324,7 +346,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxn-dE-FVx">
-                                            <rect key="frame" x="0.0" y="634" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="686" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="NVB-CC-Mva"/>
@@ -345,7 +367,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG8-Oq-bML">
-                                            <rect key="frame" x="0.0" y="686" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="738" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="PrT-lD-YXh"/>
@@ -366,7 +388,7 @@ ALL RIGHTS RESERVED</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o0-gN-6TH">
-                                            <rect key="frame" x="0.0" y="738" width="353" height="46"/>
+                                            <rect key="frame" x="0.0" y="790" width="353" height="46"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="46" id="ew5-8Y-DdM"/>

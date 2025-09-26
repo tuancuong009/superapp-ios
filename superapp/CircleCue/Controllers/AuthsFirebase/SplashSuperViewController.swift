@@ -40,14 +40,18 @@ class SplashSuperViewController: BaseViewController {
                 }
                 let seconds = 0.5
                 DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-                    if let userID = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
-                        print(userID)
+                    if !AppSettings.shared.isUseFirebase{
                         APP_DELEGATE.initSuperApp()
                     }
                     else{
-                        APP_DELEGATE.initLoginSuper()
+                        if let userID = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
+                            print(userID)
+                            APP_DELEGATE.initSuperApp()
+                        }
+                        else{
+                            APP_DELEGATE.initLoginSuper()
+                        }
                     }
-                  
                 }
                
                 

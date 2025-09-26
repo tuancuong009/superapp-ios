@@ -17,18 +17,24 @@ class menuSuperAppViewController: BaseViewController {
     @IBOutlet weak var btnApps: UIButton!
     @IBOutlet weak var btnHidden: UIButton!
     @IBOutlet weak var btnMyApps: UIButton!
+    @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+       
+    }
+
+
+    private func setupUI(){
         if let userID = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
             print(userID)
             btnLogout.isHidden = false
+            
         }
         else{
             btnLogout.isHidden = true
         }
-        
-       
         
         if AppSettings.shared.isUseFirebase{
             btnProfile.isHidden = false
@@ -37,6 +43,7 @@ class menuSuperAppViewController: BaseViewController {
             btnSubmitApp.isHidden = true
             btnInvest.isHidden = true
             btnMyApps.setTitle("My IDEAs", for: .normal)
+            btnLogin.isHidden = true
         }
         else{
             btnProfile.isHidden = true
@@ -44,10 +51,16 @@ class menuSuperAppViewController: BaseViewController {
             btnHidden.isHidden = false
             btnSubmitApp.isHidden = false
             btnInvest.isHidden = false
+            if let userID = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
+                print(userID)
+                btnLogin.isHidden = true
+                
+            }
+            else{
+                btnLogin.isHidden = false
+            }
         }
     }
-
-
     /*
     // MARK: - Navigation
 
@@ -72,7 +85,7 @@ class menuSuperAppViewController: BaseViewController {
             
         }
         else{
-            let vc = RegisterSuperAppViewController.init()
+            let vc = LoginSuperAppViewController.init()
             let nav = UINavigationController(rootViewController: vc)
             nav.isNavigationBarHidden = true
             nav.modalPresentationStyle = .fullScreen
@@ -93,7 +106,7 @@ class menuSuperAppViewController: BaseViewController {
             
         }
         else{
-            let vc = RegisterSuperAppViewController.init()
+            let vc = LoginSuperAppViewController.init()
             let nav = UINavigationController(rootViewController: vc)
             nav.isNavigationBarHidden = true
             nav.modalPresentationStyle = .fullScreen
@@ -116,7 +129,7 @@ class menuSuperAppViewController: BaseViewController {
             }
         }
         else{
-            let vc = RegisterSuperAppViewController.init()
+            let vc = LoginSuperAppViewController.init()
             let nav = UINavigationController(rootViewController: vc)
             nav.isNavigationBarHidden = true
             nav.modalPresentationStyle = .fullScreen
@@ -169,6 +182,13 @@ class menuSuperAppViewController: BaseViewController {
             }
         }
     }
+    @IBAction func doLogin(_ sender: Any) {
+        let vc = LoginSuperAppViewController.init()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.isNavigationBarHidden = true
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
+    }
     @IBAction func doCategory(_ sender: Any) {
         self.showWebViewContent(urlString: "https://superapp.app/html/categories.php")
     }
@@ -219,7 +239,8 @@ class menuSuperAppViewController: BaseViewController {
                 }
             }
             else{
-                APP_DELEGATE.initLoginSuper()
+                
+                self.setupUI()
             }
             
         }
