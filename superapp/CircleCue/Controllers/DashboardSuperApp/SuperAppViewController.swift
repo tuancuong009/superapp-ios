@@ -211,10 +211,18 @@ extension SuperAppViewController: UICollectionViewDataSource, UICollectionViewDe
             self.doMat(Any.self)
         }
         else if menu.action == .nextnannies{
-            self.showWebViewContent(urlString: "https://nextnannies.com/")
+            let nextVC = WebSuperViewController.init()
+            nextVC.url = "https://nextnannies.com/"
+            nextVC.titleNavi = menu.action.name
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
         }
         else if menu.action == .resumerule{
-            self.showWebViewContent(urlString: "https://resumerule.com")
+            let nextVC = WebSuperViewController.init()
+            nextVC.url = "https://resumerule.com"
+            nextVC.titleNavi = menu.action.name
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
         }
     }
 }

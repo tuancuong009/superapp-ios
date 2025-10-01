@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebSuperViewController" customModule="SuperApp" customModuleProvider="target">
+            <connections>
+                <outlet property="indicator" destination="2Fk-NY-0Uz" id="H2p-gP-828"/>
+                <outlet property="lblnavi" destination="1rA-Px-kOH" id="qpJ-up-54y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wkWebKit" destination="Xbc-9W-qwY" id="kHf-BP-9IP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xbc-9W-qwY">
+                    <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2Fk-NY-0Uz">
+                    <rect key="frame" x="186.66666666666666" y="467.66666666666669" width="20" height="20"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwQ-k6-XhS">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L95-rq-xnA">
+                            <rect key="frame" x="333" y="2" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Lm0-7r-aYL"/>
+                                <constraint firstAttribute="height" constant="40" id="rBm-Jf-LoB"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="btn_sa"/>
+                            <connections>
+                                <action selector="doSuper:" destination="-1" eventType="touchUpInside" id="sLp-8r-gRN"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-Px-kOH">
+                            <rect key="frame" x="172" y="9.3333333333333268" width="49" height="25.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1rA-Px-kOH" firstAttribute="centerY" secondItem="jwQ-k6-XhS" secondAttribute="centerY" id="4uM-YS-rtQ"/>
+                        <constraint firstItem="1rA-Px-kOH" firstAttribute="centerX" secondItem="jwQ-k6-XhS" secondAttribute="centerX" id="5PJ-Je-aHW"/>
+                        <constraint firstAttribute="height" constant="44" id="CIG-w2-P6T"/>
+                        <constraint firstAttribute="trailing" secondItem="L95-rq-xnA" secondAttribute="trailing" constant="20" id="tOg-86-gS4"/>
+                        <constraint firstItem="L95-rq-xnA" firstAttribute="centerY" secondItem="jwQ-k6-XhS" secondAttribute="centerY" id="xkj-Fd-V0f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Fk-NY-0Uz" firstAttribute="centerY" secondItem="Xbc-9W-qwY" secondAttribute="centerY" id="7wc-OR-dqm"/>
+                <constraint firstItem="2Fk-NY-0Uz" firstAttribute="centerX" secondItem="Xbc-9W-qwY" secondAttribute="centerX" id="Oue-mn-f66"/>
+                <constraint firstItem="Xbc-9W-qwY" firstAttribute="top" secondItem="jwQ-k6-XhS" secondAttribute="bottom" id="PFe-Vz-gLD"/>
+                <constraint firstAttribute="bottom" secondItem="Xbc-9W-qwY" secondAttribute="bottom" id="RL8-4C-paX"/>
+                <constraint firstItem="Xbc-9W-qwY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="adM-1B-w2z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xbc-9W-qwY" secondAttribute="trailing" id="kdJ-aP-Bja"/>
+                <constraint firstItem="jwQ-k6-XhS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mRB-nZ-SfB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jwQ-k6-XhS" secondAttribute="trailing" id="r4E-dw-PIY"/>
+                <constraint firstItem="jwQ-k6-XhS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tAv-cd-xhh"/>
+            </constraints>
+            <point key="canvasLocation" x="-80.152671755725194" y="-1.4084507042253522"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_sa" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -172,6 +172,8 @@
 		88620D202D3125990034ED14 /* UIImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88620D1D2D3125990034ED14 /* UIImageCropper.swift */; };
 		886635E72C60B3B0002F9626 /* AddNewShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886635E62C60B3B0002F9626 /* AddNewShopViewController.xib */; };
 		886635E82C60B3B0002F9626 /* AddNewShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886635E52C60B3B0002F9626 /* AddNewShopViewController.swift */; };
+		886B387C2E8CD11100EECAD2 /* WebSuperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886B387B2E8CD11100EECAD2 /* WebSuperViewController.xib */; };
+		886B387D2E8CD11100EECAD2 /* WebSuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886B387A2E8CD11100EECAD2 /* WebSuperViewController.swift */; };
 		8873189F2B22F54600F187A1 /* CircleFeedNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873189E2B22F54600F187A1 /* CircleFeedNewViewController.swift */; };
 		887318A12B22F81D00F187A1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887318A02B22F81D00F187A1 /* UIViewExtension.swift */; };
 		887318A32B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887318A22B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift */; };
@@ -911,6 +913,8 @@
 		886635E52C60B3B0002F9626 /* AddNewShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewShopViewController.swift; sourceTree = "<group>"; };
 		886635E62C60B3B0002F9626 /* AddNewShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewShopViewController.xib; sourceTree = "<group>"; };
 		88696BFA2BA44892002E8CCD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		886B387A2E8CD11100EECAD2 /* WebSuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSuperViewController.swift; sourceTree = "<group>"; };
+		886B387B2E8CD11100EECAD2 /* WebSuperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebSuperViewController.xib; sourceTree = "<group>"; };
 		8873189E2B22F54600F187A1 /* CircleFeedNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleFeedNewViewController.swift; sourceTree = "<group>"; };
 		887318A02B22F81D00F187A1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		887318A22B22FA9E00F187A1 /* StoryFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -1950,6 +1954,8 @@
 		8880CCCE2D76999F002F3D30 /* DashboardSuperApp */ = {
 			isa = PBXGroup;
 			children = (
+				886B387A2E8CD11100EECAD2 /* WebSuperViewController.swift */,
+				886B387B2E8CD11100EECAD2 /* WebSuperViewController.xib */,
 				8873492D2E82455F0017895E /* MyAppFirebaseTableViewCell.xib */,
 				889EC4262E8137EB006A602E /* SuperListCollectionViewCell.xib */,
 				889EC4222E813683006A602E /* SuperFirebaseAppViewController.swift */,
@@ -3574,6 +3580,7 @@
 				88DD84502D8BF72B007C340D /* RightTableViewRRCell.xib in Resources */,
 				88DD84512D8BF72B007C340D /* MessageRRViewController.xib in Resources */,
 				88DD84522D8BF72B007C340D /* NotificationRRTableViewCell.xib in Resources */,
+				886B387C2E8CD11100EECAD2 /* WebSuperViewController.xib in Resources */,
 				88DD84572D8BF72B007C340D /* PropertyCell.xib in Resources */,
 				88DD84582D8BF72B007C340D /* LeftTableViewRRCell.xib in Resources */,
 				88E6C9A82D93EBA700C27085 /* HiddenSuperViewController.xib in Resources */,
@@ -3776,6 +3783,7 @@
 				B746AC6B25B6CCB5006536B8 /* SEARCHViewController.swift in Sources */,
 				AD4E843C2528663F0025EC9B /* LoginVC.swift in Sources */,
 				88DB59072D2BD48A006B42EC /* AppMomarViewController.swift in Sources */,
+				886B387D2E8CD11100EECAD2 /* WebSuperViewController.swift in Sources */,
 				B754160125875302004D69DE /* ViewPersonalReviewViewController.swift in Sources */,
 				B706596C252DA79800B1739D /* SocialMedias.swift in Sources */,
 				88E6C99D2D93E0E800C27085 /* SuperCollectionViewCell.swift in Sources */,
@@ -4377,7 +4385,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = superapp.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4411,7 +4419,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = superapp.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
