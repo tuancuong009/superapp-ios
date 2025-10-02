@@ -16,7 +16,9 @@ class SuperAppViewController: BaseViewController {
                     MenuAppObj.init(id: 3, image: "ic_rr", action: .roomRentals, category: "Travel"),
                     MenuAppObj.init(id: 4, image: "ic_mr", action: .datingMatch, category: "Social Networking"),
                     MenuAppObj.init(id: 5, image: "app_nn", action: .nextnannies, category: "Child Care"),
-                    MenuAppObj.init(id: 6, image: "app_resumerule", action: .resumerule, category: "Jobs & Employment")
+                    MenuAppObj.init(id: 6, image: "app_resumerule", action: .resumerule, category: "Jobs & Employment"),
+                    MenuAppObj.init(id: 7, image: "app_rv", action: .appReviews, category: "Lifestyle"),
+                    MenuAppObj.init(id: 8, image: "app_kkredit", action: .kreditKorp, category: "Finance")
     ]
     var menus = [MenuAppObj]()
     var menuSearchs = [MenuAppObj]()
@@ -224,6 +226,20 @@ extension SuperAppViewController: UICollectionViewDataSource, UICollectionViewDe
             nextVC.modalPresentationStyle = .fullScreen
             present(nextVC, animated: true)
         }
+        else if menu.action == .appReviews{
+            let nextVC = WebSuperViewController.init()
+            nextVC.url = "https://appreviews.net/index.html"
+            nextVC.titleNavi = menu.action.name
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
+        }
+        else if menu.action == .kreditKorp{
+            let nextVC = WebSuperViewController.init()
+            nextVC.url = "http://www.kreditkorp.com"
+            nextVC.titleNavi = menu.action.name
+            nextVC.modalPresentationStyle = .fullScreen
+            present(nextVC, animated: true)
+        }
     }
 }
 
@@ -256,6 +272,8 @@ enum MenuSuperAction: Int{
     case datingMatch
     case nextnannies
     case resumerule
+    case appReviews
+    case kreditKorp
     case other
     var name: String{
         switch self {
@@ -274,6 +292,10 @@ enum MenuSuperAction: Int{
             return "Next Nannies"
         case .resumerule:
             return "ResumeRule"
+        case .appReviews:
+            return "AppReviews"
+        case .kreditKorp:
+            return "KreditKorp"
         }
     }
 }

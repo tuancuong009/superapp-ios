@@ -4370,7 +4370,7 @@
 				CODE_SIGN_ENTITLEMENTS = CircleCue/CircleCue.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = SND2XFR4KM;
 				ENABLE_BITCODE = NO;
@@ -4404,7 +4404,7 @@
 				CODE_SIGN_ENTITLEMENTS = CircleCue/CircleCue.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = SND2XFR4KM;
 				ENABLE_BITCODE = NO;

@@ -13,7 +13,9 @@ class HiddenSuperViewController: UIViewController {
                     MenuAppObj.init(id: 3, image: "ic_rr", action: .roomRentals, category: "Travel"),
                     MenuAppObj.init(id: 4, image: "ic_mr", action: .datingMatch, category: "Social Networking"),
                     MenuAppObj.init(id: 5, image: "app_nn", action: .nextnannies, category: "Child Care"),
-                    MenuAppObj.init(id: 6, image: "app_resumerule", action: .resumerule, category: "Jobs & Employment")
+                    MenuAppObj.init(id: 6, image: "app_resumerule", action: .resumerule, category: "Jobs & Employment"),
+                    MenuAppObj.init(id: 7, image: "app_rv", action: .appReviews, category: "Lifestyle"),
+                    MenuAppObj.init(id: 8, image: "app_kkredit", action: .kreditKorp, category: "Finance")
                     
     ]
     var menus = [MenuAppObj]()

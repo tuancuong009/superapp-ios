@@ -161,7 +161,12 @@ class menuSuperAppViewController: BaseViewController {
         self.showOutsideAppWebContent(urlString: "https://www.superapp.app/vision.php")
     }
     @IBAction func doSubmitApp(_ sender: Any) {
-        self.showOutsideAppWebContent(urlString: "https://www.superapp.app/submitapp.php")
+        if let userid = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
+            self.showOutsideAppWebContent(urlString: "https://www.superapp.app/submitapp.php?uid=\(userid)")
+        }
+        else{
+            self.showOutsideAppWebContent(urlString: "https://www.superapp.app/submitapp.php")
+        }
     }
     @IBAction func doMessage(_ sender: Any) {
         let mainViewController = sideMenuController!

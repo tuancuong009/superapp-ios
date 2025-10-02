@@ -33,7 +33,13 @@ class AppsMenuViewController: BaseViewController {
         self.sideMenuController?.showLeftView()
     }
     @IBAction func doSubmitApps(_ sender: Any) {
-        self.showOutsideAppWebContent(urlString: "https://www.superapp.app/submitapp.php")
+        if let userid = UserDefaults.standard.value(forKey: USER_ID_SUPER_APP) as? String{
+            self.showOutsideAppWebContent(urlString: "https://www.superapp.app/submitapp.php?uid=\(userid)")
+        }
+        else{
+            self.showOutsideAppWebContent(urlString: "https://www.superapp.app/submitapp.php")
+        }
+      
     }
 }
 
